@@ -1,7 +1,7 @@
-.menu-large-text {
+.menu__description {
   text-align: center;
 }
-.menu-small-text {
+.menu__subtext {
   text-align: center;
 }
 .menu-list {
@@ -9,24 +9,24 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.menu-item {
+.menu-list__item {
   position: relative;
 }
-.menu-img-wrapper {
+.menu-list__img-wrapper {
   height: 100%;
 }
-.menu-img {
+.menu-list__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.menu-content-wrapper {
+.menu-list__content-wrapper {
   position: absolute;
   top: 0;
   padding: 15px;
   text-align: center;
 }
-.menu-item-title {
+.menu-list__title {
   margin: 0;
   padding-top: 10px;
   font-family: 'Teko', sans-serif;
@@ -35,7 +35,7 @@
   text-align: center;
   color: white;
 }
-.menu-item-content {
+.menu-list__content {
   font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   line-height: 1.7;
