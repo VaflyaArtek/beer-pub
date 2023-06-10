@@ -5,6 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root{
+  --music-bckg: #212e3a;
+  --music-text-color: #fff;
+}
+
 body {
   padding: 0 15px;
   background-color: #4e4949;
