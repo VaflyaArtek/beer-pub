@@ -16,7 +16,8 @@
   --ui-main-text-color-light: #fff;
   --ui-text-dark-color: #373737;
   --ui-text-color: rgb(157,157,157);
-}
+  --music-bckg: #212e3a;
+  --music-text-color: #fff;
 
 body {
   padding: 0 15px;
@@ -32,5 +33,5 @@ a {
   font-family: 'Shadows Into Light', cursive;
   font-size: 21px;
   text-align: center;
-  color: #ffc123;
+  color: var(--ui-brand-color);
 }
