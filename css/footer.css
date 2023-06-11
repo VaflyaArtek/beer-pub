@@ -1,13 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&family=Teko:wght@400;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 footer {
-    background-color: black;
+    background-color: var(--ui-block-title-color);
 }
 
 .footer {
@@ -24,11 +17,11 @@ footer {
 
 a {
     text-decoration: none;
-    color: rgb(157, 157, 157);
+    color: var(--ui-text-color);
   }
 
 svg {
-    color: #ffc123;
+    color: var(--ui-brand-color);
     width: 20px;
     height: 24px;
     margin-right: 10px;
@@ -48,7 +41,7 @@ svg {
     justify-content: flex-start;
 }
 
-.footer__container-text {
+.footer__container-title {
     margin-top: 30px;
 }
 
@@ -66,14 +59,14 @@ svg {
 .footer__container-social-icons-item {
     list-style: none;
     display: inline-block;
-    color: #ffc123;
+    color: var(--ui-brand-color);
 }
 
-.contacts__menu, .footer__nav {
+.footer__contacts-menu, .footer__nav {
     margin: 0 auto;
 }
 
-.contacts__item, .footer__menu-item, .footer__text {
+.footer__contacts-menu-item, .footer__nav-menu-item, .footer__title {
     padding: 10px 0;
     display: flex;
     flex-direction: row;
@@ -81,13 +74,13 @@ svg {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: rgb(157, 157, 157);
+    color: var(--ui-text-color);
 }
 
 .footer__copyright {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: rgb(157, 157, 157);
-    border-top: rgb(157, 157, 157);
+    color: var(--ui-text-color);
+    border-top: var(--ui-text-color);
 }
