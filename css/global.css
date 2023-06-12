@@ -18,9 +18,17 @@
   --ui-text-color: rgb(157,157,157);
   --music-bckg: #212e3a;
   --music-text-color: #fff;
-
+}
+.container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
 body {
-  padding: 0 15px;
   background-color: #4e4949;
 }
 ul {
@@ -28,6 +36,9 @@ ul {
 }
 a {
   text-decoration:none;
+}
+img {
+  width: 100%;
 }
 .title-section {
   font-family: 'Shadows Into Light', cursive;
