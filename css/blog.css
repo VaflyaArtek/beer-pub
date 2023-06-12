@@ -1,5 +1,5 @@
 .blog {
-    background-color: black;
+    background-color: #000000;
     padding: 60px 0 130px;
 }
 
@@ -11,7 +11,7 @@
 .blog__text {
     margin-bottom: 25px;
     text-align: center;
-    color: #ffc123;
+    color: var(--ui-brand-color);
     font-family: 'Shadows Into Light', cursive;
     font-size: 28px;
 }
@@ -19,7 +19,7 @@
 .blog__title {
     margin-bottom: 25px;
     text-align: center;
-    color: #ffffff;
+    color: var(--ui-main-text-color-light);
     font-family: 'Teko', sans-serif;
     font-size: 62px;
     font-weight: 300;
@@ -28,7 +28,7 @@
 .blog__description {
     margin-bottom: 25px;
     text-align: center;
-    color: #cccccc;
+    color: var(--ui-text-color);
     font-family: "Open Sans", sans-serif;
     font-size: 19px;
 }
@@ -47,21 +47,21 @@
 
 .blog__post-category {
     margin: 25px 0;
-    color: #ffc123;
+    color: var(--ui-brand-color);
     font-family: "Open Sans", sans-serif;
     font-weight: 15px;
 }
 
 .blog__post-title {
     margin-bottom: 25px;
-    color: #ffffff;
+    color: var(--ui-main-text-color-light);
     font-family: 'Teko', sans-serif;
     font-size: 38px;
     font-weight: 300;
 }
 
 .blog__post-description {
-    color: #9d9d9d;
+    color: var(--ui-text-color);
     font-family: "Open Sans", sans-serif;
     font-size: 17px;
     line-height: 1.5;
@@ -74,10 +74,10 @@
 .blog__post-link {
     margin: 25px 0;
     padding: 18px 40px;
-    color: #ffffff;
+    color: var(--ui-main-text-color-light);
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
     font-weight: 700;
-    border-color: #ffffff;
+    border-color: var(--ui-main-text-color-light);
     border: solid;
 }
