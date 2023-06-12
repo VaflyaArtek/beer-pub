@@ -1,0 +1,28 @@
+.partners__container {
+    background-color: var(--ui-brand-color); 
+}
+.carousel-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 6;
+    max-height: 172px;
+    width: 100%;
+    padding: 30px 40px 30px 40px;
+}
+.carousel__btn-prev {
+    width: 24px;
+    height: 24px;
+}
+.carousel__btn-next {
+    width: 24px;
+    height: 24px;
+}
+.carousel-img {
+    height: 56px;
+    width: 97px;
+    background-color: var(--ui-link-hover-color-light);
+    padding: 20px 20px;
+}
+
