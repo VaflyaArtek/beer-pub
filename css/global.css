@@ -5,8 +5,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --ui-brand-color: #ffc123;
+  --ui-dark-accent-color: #444343;
+  --ui-block-title-color: #111;
+  --ui-caption-color: #080505;
+  --ui-light-accent-color: #fcfaf8;
+  --ui-link-color: #1d1f23;
+  --ui-link-color-light: #ffc962;
+  --ui-link-hover-color-light: #f3b822;
+  --ui-main-text-color-light: #fff;
+  --ui-text-dark-color: #373737;
+  --ui-text-color: rgb(157,157,157);
+  --music-bckg: #212e3a;
+  --music-text-color: #fff;
+}
+.container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
 body {
-  padding: 0 15px;
   background-color: #4e4949;
 }
 ul {
@@ -15,9 +39,12 @@ ul {
 a {
   text-decoration:none;
 }
+img {
+  width: 100%;
+}
 .title-section {
   font-family: 'Shadows Into Light', cursive;
   font-size: 21px;
   text-align: center;
-  color: #ffc123;
+  color: var(--ui-brand-color);
 }
