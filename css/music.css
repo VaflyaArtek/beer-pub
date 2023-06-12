@@ -1,0 +1,33 @@
+.fallout{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--music-bckg);
+    z-index: 999;
+    opacity: .9;
+    color: var(--music-text-color);
+}
+
+.music__button-group{
+    margin-top: 20px;
+}
+
+#music__yes-btn{
+    margin-right: 50px;
+}
+
+#music__yes-btn, #music__no-btn{
+    font-size: 20px;
+    background-color: inherit;
+    cursor: pointer;
+    border: none;
+    color: var(--music-text-color);
+}
+
+.music__volume-slider{
+    margin-top: 20px;
+}
