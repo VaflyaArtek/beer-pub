@@ -10,9 +10,11 @@
   --ui-brand-color: #ffc123;
   --ui-dark-accent-color: #444343;
   --ui-block-title-color: #111;
+  --ui-caption-color: #080505;
   --ui-light-accent-color: #fcfaf8;
   --ui-link-color: #1d1f23;
   --ui-link-color-light: #ffc962;
+  --ui-link-hover-color-light: #f3b822;
   --ui-main-text-color-light: #fff;
   --ui-text-dark-color: #373737;
   --ui-text-color: rgb(157,157,157);
