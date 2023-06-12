@@ -80,4 +80,11 @@
     font-weight: 700;
     border-color: var(--ui-main-text-color-light);
     border: solid;
+    transition: background-color 0.5s;
+}
+
+.blog__post-link:hover {
+    border-color: var(--ui-main-text-color-light);
+    background-color: var(--ui-main-text-color-light);
+    color: var(--ui-link-color);
 }
