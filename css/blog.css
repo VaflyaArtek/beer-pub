@@ -8,7 +8,7 @@
 
 .blog__header {
     margin: 0 5px;
-    padding: 30px 15px;
+    padding: 30px 20px;
 }
 
 .blog__text {
@@ -16,7 +16,7 @@
     text-align: center;
     color: var(--ui-brand-color);
     font-family: 'Shadows Into Light', cursive;
-    font-size: 28px;
+    font-size: 14px;
 }
 
 .blog__title {
@@ -24,7 +24,7 @@
     text-align: center;
     color: var(--ui-main-text-color-light);
     font-family: 'Teko', sans-serif;
-    font-size: 62px;
+    font-size: 40px;
     font-weight: 300;
 }
 
@@ -34,6 +34,7 @@
     color: var(--ui-block-description-color);
     font-family: "Open Sans", sans-serif;
     font-size: 19px;
+    line-height: 28px;
 }
 
 .blog__post-container {
@@ -51,14 +52,14 @@
     margin: 25px 0;
     color: var(--ui-brand-color);
     font-family: "Open Sans", sans-serif;
-    font-weight: 15px;
+    font-weight: 14px;
 }
 
 .blog__post-title {
     margin-bottom: 20px;
     color: var(--ui-main-text-color-light);
     font-family: 'Teko', sans-serif;
-    font-size: 38px;
+    font-size: 26px;
     font-weight: 300;
 }
 
@@ -97,6 +98,22 @@
         flex-wrap: wrap;
     }
 
+    .blog__text {
+        font-size: 21px;
+    }
+
+    .blog__title {
+        font-size: 51px;
+    }
+
+    .blog__post-category {
+        font-size: 14px;
+    }
+
+    .blog__post-title {
+        font-size: 32px;
+    }
+
     .blog__post {
         width: calc(50% - 20px);
         margin: 10px;
@@ -109,6 +126,22 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin: 0 25px;
+    }
+
+    .blog__text {
+        font-size: 28px;
+    }
+
+    .blog__title {
+        font-size: 62px;
+    }
+
+    .blog__post-category {
+        font-size: 15px;
+    }
+
+    .blog__post-title {
+        font-size: 38px;
     }
 
     .blog__post {
@@ -124,6 +157,22 @@
         flex-wrap: wrap;
         max-width: 1200px;
         margin: auto;
+    }
+
+    .blog__text {
+        font-size: 28px;
+    }
+
+    .blog__title {
+        font-size: 62px;
+    }
+
+    .blog__post-category {
+        font-size: 15px;
+    }
+
+    .blog__post-title {
+        font-size: 38px;
     }
 
     .blog__post {
