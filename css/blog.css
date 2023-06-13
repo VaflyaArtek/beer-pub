@@ -100,6 +100,7 @@
     .blog__post {
         width: calc(50% - 20px);
         margin: 10px;
+        padding: 0 5px;
     }
 }
 
@@ -107,6 +108,22 @@
     .blog__post-container {
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 0 25px;
+    }
+
+    .blog__post {
+        width: calc(33.3333% - 20px);
+        margin: 10px;
+        padding: 0 5px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .blog__post-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1280px;
+        margin: auto;
     }
 
     .blog__post {
