@@ -11,6 +11,13 @@
     filter: brightness(70%) blur(0.5px);
 }
 
+@media (min-width: 768px) {
+.beer-boutique__title br,
+.beer-boutique__subtitle br {
+    display: none;
+}
+}
+
 .beer-boutique__container {
 
     display: flex;
@@ -42,7 +49,11 @@
 .beer-boutique__subtitle {
     color: var(--beer-boutique__subtitle);
     font-family: "Open Sans", sans-serif;
+    line-height: normal;
     font-size: 19px;
+}
+.beer-boutique__subtitle, h1 {
+    text-align: center;
 }
 
 .beer-boutique__reserve-table {
