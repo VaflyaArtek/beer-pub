@@ -1,12 +1,12 @@
 @import "global.css";
 @import "header.css";
+@import "beer-boutique.partial.css";
 @import "menu-section.css";
 @import "what-we-offer.css";
 @import "carousel-products.css";
-@import "blog.css";
 @import "about-beer-boutique.css";
+@import "blog.css";
 @import "partners-carousel.css";
-@import "beer-boutique.partial.css";
 @import "music.css";
 @import "footer.css";
 
