@@ -19,10 +19,14 @@
   --ui-link-hover-color-light: #f3b822;
   --ui-main-text-color-light: #fff;
   --ui-text-dark-color: #373737;
-  --ui-text-color: rgb(157,157,157);
+  --ui-text-color: rgb(157, 157, 157);
   --music-bckg: #212e3a;
   --music-text-color: #fff;
+  --beer-boutique__enjoy: rgb(255, 255, 255);
+  --beer-boutique__subtitle: rgb(204, 204, 204);
+  --beer-boutique__reserve-table: rgb(17, 17, 17);
 }
+
 .container {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -32,18 +36,23 @@
   margin-right: auto;
   margin-left: auto;
 }
+
 body {
   background-color: #4e4949;
 }
+
 ul {
   list-style-type: none;
 }
+
 a {
-  text-decoration:none;
+  text-decoration: none;
 }
+
 img {
   width: 100%;
 }
+
 .title-section {
   font-family: 'Shadows Into Light', cursive;
   font-size: 21px;
