@@ -1,0 +1,57 @@
+.products {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    color: var(--ui-text-color);
+    padding: 20px 50px;
+  }
+  .products__title {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--ui-brand-color);
+    text-align: center;
+    margin:0 0 10px;
+  }
+  .products__subtitle {
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--ui-light-accent-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin:0 0 10px;
+  }
+  .products__text {
+    font-size: 19px;
+    line-height: 28px;
+    text-align: center;
+    margin:0 0 10px;
+  }
+  .carousel__slide-container {
+    margin: 0 0 20px;
+  }
+  .carousel__slide {
+    margin: 0 0 20px; 
+  }
+  .carousel__slide--detail,
+  .carousel__slide--note{
+    color: var(--ui-main-text-color-light);
+  }
+  .carousel__slide--title {
+    font-family: 'Teko', sans-serif;
+    font-size: 38px;
+    line-height: 38px;
+    color: var(--ui-main-text-color-light);
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+  .carousel__slide--image {
+    padding: 0 105px 20px;
+  }
+  .carousel__slide--details {
+    margin: 0 0 20px;
+  }
+  .carousel__slide--description {
+    margin: 0 0 20px;
+  }
