@@ -8,6 +8,7 @@
 
 :root {
   --ui-background-img: url(../images/background-image.png);
+  --ui-contacts-title-background-img: url(../images/contacts-title-background.webp);
   --ui-brand-color: #ffc123;
   --ui-dark-accent-color: #444343;
   --ui-block-title-color: #111;

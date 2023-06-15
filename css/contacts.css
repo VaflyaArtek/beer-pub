@@ -1,3 +1,42 @@
+.contacts {
+    /* Temporary local background */
+    background-image: var(--ui-background-img);
+    background-repeat: repeat;
+    min-width: 320px;
+}
+
+.contacts__header {
+    background-image: var(--ui-contacts-title-background-img);
+    background-position: 50%;
+    padding: 40px 30px;
+}
+
+.contacts__item-image, .contacts__item-content {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contacts__item-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 130px 30px;
+}
+
+.contacts__item {
+    flex-basis: 33.3333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contacts__item-image {
-    width: 100px;
+    width: 60px;
+}
+
+.contacts__item-title {
+    color: var(--beer-boutique__enjoy);
+}
+
+.contacts__item-image {
+    padding-right: 10px;
 }
