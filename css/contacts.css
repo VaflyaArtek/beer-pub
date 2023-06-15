@@ -2,8 +2,3 @@
     width: 100px;
 }
 
-.blog__post-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 25px;
-}
