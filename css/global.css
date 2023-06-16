@@ -25,6 +25,12 @@
   --beer-boutique__enjoy: rgb(255, 255, 255);
   --beer-boutique__subtitle: rgb(204, 204, 204);
   --beer-boutique__reserve-table: rgb(17, 17, 17);
+  --about-beer-boutique-title-text-color: #111;
+  --about-beer-boutique-handwitten-text-color: #ffc123;
+  --about-beer-boutique-heading-text-color: #fff;
+  --about-beer-boutique-subheading-text-color: #d8d8d8;
+  --about-beer-boutique-main-text-color: #a6a6a6;
+
 }
 
 .container {
