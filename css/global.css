@@ -23,8 +23,8 @@
   --music-bckg: #212e3a;
   --music-text-color: #fff;
   --beer-boutique__enjoy: rgb(255, 255, 255);
-  --beer-boutique__subtitle: rgb(204, 204, 204);
-  --beer-boutique__reserve-table: rgb(17, 17, 17);
+  --beer-boutique__header-color: rgb(204, 204, 204);
+  --beer-boutique__main-black-color: rgb(17, 17, 17);
 }
 
 .container {
