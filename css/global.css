@@ -51,6 +51,7 @@
 
 body {
   background-color: #4e4949;
+  overflow-x: hidden;
 }
 
 ul {
