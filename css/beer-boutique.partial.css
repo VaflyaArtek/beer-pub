@@ -1,13 +1,25 @@
+.navbar {
+    padding: 0;
+}
+
 .beer-boutique {
     height: 100%;
     padding: 0;
     margin: 0;
 }
 
+.beer-boutique__background-video-container {
+    position: relative;
+    /* overflow: hidden; */
+}
+
 .beer-boutique__background-video {
     filter: brightness(70%) blur(0.5px);
-    height: 100vh;
-    width: 100vw;
+    position:absolute;
+    left:-40vh;
+    width:200vh;
+    height:100vh;
+    overflow: hidden;
 }
 
 .beer-boutique__container {
@@ -16,7 +28,8 @@
     margin-bottom: 200px;
     align-items: center;
     position: relative;
-    margin-top: -450px;
+    z-index: 10;
+    margin-top: 0;
     line-height: 50px;   
     display: flex;
     /*position: absolute;

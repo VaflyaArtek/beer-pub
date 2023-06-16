@@ -33,8 +33,11 @@
   --about-beer-boutique-heading-text-color: #fff;
   --about-beer-boutique-subheading-text-color: #d8d8d8;
   --about-beer-boutique-main-text-color: #a6a6a6;
-  --contacts-form-background-input-color: rgba(255, 255, 255, 0.04)
-
+  --contacts-form-background-input-color: rgba(255, 255, 255, 0.04);
+  --scrollbar-track: #00000057;
+  --scrollbar-thumb: #00000081;
+  --content-bg-accent: #000000be;
+  --content-bg: #00000000;
 }
 
 .container {
@@ -49,6 +52,7 @@
 
 body {
   background-color: #4e4949;
+  overflow-x: hidden;
 }
 
 ul {
