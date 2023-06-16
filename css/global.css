@@ -31,7 +31,10 @@
   --about-beer-boutique-heading-text-color: #fff;
   --about-beer-boutique-subheading-text-color: #d8d8d8;
   --about-beer-boutique-main-text-color: #a6a6a6;
-
+  --scrollbar-track: #00000057;
+  --scrollbar-thumb: #00000081;
+  --content-bg-accent: #000000be;
+  --content-bg: #00000000;
 }
 
 .container {
