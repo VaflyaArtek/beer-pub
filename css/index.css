@@ -1,14 +1,17 @@
-@import "music.css";
 @import "global.css";
+@import "header.css";
+@import "beer-boutique.partial.css";
 @import "menu-section.css";
 @import "what-we-offer.css";
 @import "carousel-products.css";
-@import "blog.css";
-@import "footer.css";
-@import "header.css";
 @import "about-beer-boutique.css";
+@import "blog.css";
 @import "partners-carousel.css";
-@import "beer-boutique.partial.css"
+@import "music.css";
+@import "footer.css";
+@import "about-hiring-and-boutique.partial.css";
+@import "contacts.css";
+
 
 
 
@@ -16,7 +19,7 @@
 /* 
 Added fonts to the project
 
-font-family: 'Open Sans', sans-seri
+font-family: 'Open Sans', sans-serif;
 font-family: 'Teko', sans-serif;
 font-family: 'Shadows Into Light', cursive;
 

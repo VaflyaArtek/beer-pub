@@ -1,0 +1,72 @@
+.contacts {
+    /* Temporary local background */
+    background-image: var(--ui-background-img);
+    background-repeat: repeat;
+    min-width: 320px;
+}
+
+.contacts__container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contacts__header {
+    background-image: var(--ui-contacts-title-background-img);
+    background-position: 50%;
+}
+
+.contacts__title {
+    font-family: Teko, sans-serif;
+    font-size: 62px;
+    padding: 35px 0 25px 0;
+}
+
+.contacts__item-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 130px 0px;
+}
+
+.contacts__item-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.contacts__item-image {
+    width: 60px;
+    height: 60px;
+    padding-left: 10px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.contacts__item-content {
+    margin-left: 15px;
+}
+
+.contacts__item-title {
+    color: var(--beer-boutique__enjoy);
+    font-family: Teko, sans-serif;
+    font-size: 38px;
+    margin: 0;
+}
+
+.contacts__item-description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: var(--ui-text-color);
+}
+
+.contacts__item-telephone,
+.contacts__item-email,
+.contacts__item-work-time {
+    display: flex;
+    justify-content: space-between;
+}

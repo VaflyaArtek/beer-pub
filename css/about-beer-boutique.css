@@ -1,6 +1,29 @@
-.about__beer__boutique__title {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.about-beer-boutique__title {
+    text-align: center;
+    font-size: 62px;
+}
 
+.about-beer-boutique__image {
+    width: 602px;
+    height: 630px;
+}
+
+.about-beer-boutique__handwritten__text {
+    color: var(--about-beer-boutique-handwitten-text-color);
+    font-size: 28px;
+}
+
+.about-beer-boutique__heading__text {
+    color: var(--about-beer-boutique-heading-text-color);
+    font-size: 62px;
+}
+
+.about-beer-boutique__subheading__text {
+    color: var(--about-beer-boutique-subheading-text-color);
+    font-size: 19px;
+}
+
+.about-beer-boutique__main__text {
+    color: var(--about-beer-boutique-main-text-color);
+    font-size: 17px;
 }
