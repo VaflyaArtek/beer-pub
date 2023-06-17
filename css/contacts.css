@@ -87,7 +87,7 @@
   .contacts__form-background {
     background-color: #000;
     height: 100%;
-    padding: 80px 130px 50px 130px;
+    padding: 80px 100px 50px 100px;
   }
   
   .contacts__map {
@@ -158,6 +158,10 @@
   
     .contacts__title {
       font-size: 51px;
+    }
+
+    .contacts__form-background {
+      padding: 80px 70px 50px 70px;
     }
   
     .contacts__item-title {
