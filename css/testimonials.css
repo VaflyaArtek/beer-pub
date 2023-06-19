@@ -1,3 +1,9 @@
+.testimonials {
+    background-image: var(--ui-background-img);
+    background-repeat: repeat;
+    min-width: 320px;
+}
+
 .testimonials__description {
     padding-top: 155px;
     display: flex;
