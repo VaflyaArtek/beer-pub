@@ -24,7 +24,9 @@ function greet(name, owner) {
 
 // https://www.codewars.com/kata/keep-hydrated-1/train/javascript
 
-const litres = (time) => Math.floor(time * 0.5);
+function litres(time) {
+  return Math.floor(time / 2);
+}
 
 // https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
 
