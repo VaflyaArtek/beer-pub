@@ -1,0 +1,77 @@
+.testimonials__description {
+    padding-top: 155px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 85.5%;
+}
+
+.testimonial__suptitle {
+    color: var(--ui-brand-color);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.testimonial__title {
+    color: var(--about-beer-boutique-heading-text-color);
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    
+}
+
+.testimonial__text {
+    color: var(--beer-boutique__header-color);
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 19px;
+    text-align: center;
+    padding: 0 20.5px 0 20.5px;
+    margin-bottom: 35px;
+}
+
+.card {
+    background-color: var(--testimonials-cards-color);
+    max-width: 85.5%;
+    margin: auto;
+    margin-bottom: 55px;
+}
+
+.picture__element {
+    margin: 30px auto 10px;
+}
+
+.card__picture {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.comment__name {
+    color: var(--about-beer-boutique-heading-text-color);
+    font-family: 'Teko', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comment__text {
+    color: var(--ui-text-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin: 0 30px 20px 30px;
+}
+
+.comment__date {
+    color: var(--ui-brand-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+
+}

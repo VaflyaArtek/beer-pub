@@ -40,6 +40,7 @@
   --scrollbar-thumb: #00000081;
   --content-bg-accent: #000000be;
   --content-bg: #00000000;
+  --testimonials-cards-color: rgba(9, 6, 6, 1);
 }
 
 .container {
