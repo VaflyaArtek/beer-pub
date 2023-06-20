@@ -45,6 +45,7 @@
     max-width: 85.5%;
     margin: auto;
     margin-bottom: 55px;
+    
 }
 
 .picture__element {
@@ -79,5 +80,41 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 35px;
+
+}
+
+@media (min-width: 768px) {
+    .testimonial__suptitle {
+         font-size: 21px;
+    }
+
+    .testimonial__title {
+        font-size: 51px;
+    }
+
+    .testimonials__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 92%; 
+        margin: auto;
+
+    }
+
+    .card {
+        margin: 0 15px 0 15px;
+        
+    }
+    
+    .card__picture {
+        width: 120px;
+    }
+
+    .comment__name {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 992px) {
 
 }
