@@ -41,6 +41,16 @@
   --content-bg-accent: #000000be;
   --content-bg: #00000000;
   --testimonials-cards-color: rgba(9, 6, 6, 1);
+  --main-color: #9d9d9d;
+  --main-font: 'Open Sans', sans-serif;
+  --main-title-color: #ffc123;
+  --main-title-font: 'Shadows Into Light', cursive;
+  --main-subtitle-color: #fcfaf8;
+  --main-heading-font: 'Teko', sans-serif;
+  --main-heading-color: #fff;
+  --main-description-color: #ccc;
+  --main-details-color: #fff;
+   font-family: var(--main-font);
 }
 
 .container {
