@@ -12,14 +12,14 @@
 }
 
 .our-story__pre-title {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     color: var(--ui-brand-color);
     font-family: 'Shadows Into Light', cursive;
     font-size: 14px;
 }
 
 .our-story__title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: var(--ui-main-text-color-light);
     font-family: 'Teko', sans-serif;
     font-size: 40px;
@@ -84,7 +84,6 @@
 
     .our-story__post {
         max-width: 625px;
-        margin: auto;
     }
 
     .our-story__img-container {
