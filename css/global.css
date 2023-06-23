@@ -66,7 +66,7 @@
 }
 
 body {
-  background: #111;
+  background-color: var(--main-background-color);
   background-image: var(--ui-background-img);
   background-repeat: repeat;
   overflow-x: hidden;
