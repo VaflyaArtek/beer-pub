@@ -17,8 +17,6 @@ temporary classes (until the carousel is running)
   padding: 90px 0 65px;
   max-width: 1230px;  
   margin: auto;
-  background-image: var(--ui-background-img);
-  background-repeat: repeat;
 }
 
 .products__title {
