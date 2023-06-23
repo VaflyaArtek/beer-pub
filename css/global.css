@@ -50,7 +50,11 @@
   --main-heading-color: #fff;
   --main-description-color: #ccc;
   --main-details-color: #fff;
-   font-family: var(--main-font);
+  --main-background-color: #111;
+  --main-background-image: url("../images/background.png");
+  --arrow-background: #020200;
+  font-family: var(--main-font);
+  background: var(--main-background-color) var(--main-background-image);
 }
 
 .container {
@@ -64,7 +68,6 @@
 }
 
 body {
-  background-color: #4e4949;
   overflow-x: hidden;
 }
 
