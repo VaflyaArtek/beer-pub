@@ -53,8 +53,6 @@
   --main-background-color: #111;
   --arrow-background: #020200;
   font-family: var(--main-font);
-	background-color: var(--main-background-color);
-	background-image: var(--ui-background-img);
 }
 
 .container {
@@ -65,6 +63,12 @@
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+}
+
+body {
+  background-color: var(--main-background-color);
+	background-image: var(--ui-background-img);
+  overflow-x: hidden;
 }
 
 ul {
