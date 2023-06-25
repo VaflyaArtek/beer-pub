@@ -1,229 +1,308 @@
 .blog {
-    /* Temporary local background */
-    background-image: var(--ui-background-img);
-    background-repeat: repeat;
-    padding: 50px 0 50px;
-    min-width: 320px;
-  }
-  
-  .blog__header {
-    margin: 0 5px;
-    padding: 30px 20px;
-  }
-  
-  .blog__text {
-    margin-bottom: 20px;
-    text-align: center;
-    color: var(--ui-brand-color);
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 14px;
-  }
-  
-  .blog__title {
-    margin-bottom: 20px;
-    text-align: center;
-    color: var(--ui-main-text-color-light);
-    font-family: 'Teko', sans-serif;
-    font-size: 40px;
-    font-weight: 300;
-  }
-  
-  .blog__description {
-    margin-bottom: 20px;
-    text-align: center;
-    color: var(--ui-block-description-color);
-    font-family: "Open Sans", sans-serif;
-    font-size: 19px;
-    line-height: 28px;
-  }
-  
+  background-image: var(--ui-background-img);
+  background-repeat: repeat;
+  padding: 50px 0 50px;
+  min-width: 320px;
+}
+
+.blog__header {
+  margin: 0 5px;
+  padding: 30px 20px;
+}
+
+.blog__text {
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--ui-brand-color);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 14px;
+}
+
+.blog__title {
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--ui-main-text-color-light);
+  font-family: 'Teko', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.blog__description {
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--ui-block-description-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  line-height: 28px;
+}
+
+.blog__post-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px;
+}
+
+.blog__post {
+  display: block;
+  width: 100%;
+}
+
+.blog__post-category {
+  margin: 25px 0;
+  color: var(--ui-brand-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.blog__post-title {
+  margin-bottom: 20px;
+  color: var(--ui-main-text-color-light);
+  font-family: 'Teko', sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.blog__post-description {
+  color: var(--ui-text-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: -webkit-line-clamp 0.5s;
+}
+
+.blog__post-description.expanded {
+  -webkit-line-clamp: unset;
+  transition: -webkit-line-clamp 0.5s, max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.blog__post-button {
+  margin: 50px 0 70px 0;
+}
+
+.blog__post-link {
+  margin: 25px 0;
+  padding: 18px 40px;
+  color: var(--ui-main-text-color-light);
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  border-color: var(--ui-main-text-color-light);
+  border: solid;
+  transition: background-color 0.5s;
+}
+
+.blog__post-link:hover {
+  border-color: var(--ui-main-text-color-light);
+  background-color: var(--ui-main-text-color-light);
+  color: var(--ui-link-color);
+}
+
+.blog__post-link[data-expanded="true"] {
+  background-color: var(--ui-main-text-color-light);
+  color: var(--ui-link-color);
+}
+
+.blog__title-count {
+  margin-bottom: 20px;
+  color: var(--ui-main-text-color-light);
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.blog__title-count-decoration {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 42px;
+  font-weight: lighter;
+  color: var(--about-beer-boutique-handwitten-text-color);
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  font-family: 'Teko', sans-serif;
+  color: var(--ui-main-text-color-light);
+  margin-top: 20px;
+}
+
+.countdown-item {
+  text-align: center;
+  width: 100%;
+  margin: 0 10px;
+}
+
+.countdown-value {
+  font-size: 52px;
+}
+
+.countdown-label {
+  font-size: 18px;
+  margin-top: -20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.countdown-separator {
+  font-size: 52px;
+  font-weight: lighter;
+  margin-top: 15px;
+  color: var(--about-beer-boutique-handwitten-text-color);
+}
+
+.blog__countdown-container {
+  position: relative;
+  width: 100%;
+}
+
+#blog__countdown-image {
+  width: 100%;
+  height: auto;
+}
+
+.blog__countdown-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.blog__countdown-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--ui-light-accent-color);
+  font-family: 'Teko', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.blog__countdown-container:hover .blog__countdown-overlay,
+.blog__countdown-container:hover .blog__countdown-text {
+  opacity: 1;
+}
+
+.blog__table {
+  background-color: var(--ui-brand-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 50px;
+  height: 65px;
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog__button {
+  color: var(--beer-boutique__reserve-table);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
   .blog__post-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  
-  .blog__post {
-    display: block;
-    width: 100%;
+
+  .blog__text {
+    font-size: 21px;
   }
-  
+
+  .blog__title {
+    font-size: 51px;
+  }
+
   .blog__post-category {
-    margin: 25px 0;
-    color: var(--ui-brand-color);
-    font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    font-weight: 700;
   }
-  
+
   .blog__post-title {
-    margin-bottom: 20px;
-    color: var(--ui-main-text-color-light);
-    font-family: 'Teko', sans-serif;
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 32px;
   }
-  
-  .blog__post-description {
-    color: var(--ui-text-color);
-    font-family: "Open Sans", sans-serif;
-    font-size: 17px;
-    line-height: 1.5;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    transition: -webkit-line-clamp 0.5s;
+
+  .blog__post {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 0 5px;
   }
-  
-  .blog__post-description.expanded {
-    -webkit-line-clamp: unset;
-    transition: -webkit-line-clamp 0.5s, max-height 0.3s ease, opacity 0.3s ease;
-    max-height: 1000px;
-    opacity: 1;
-  }
-  
-  .blog__post-button {
-    margin: 50px 0 70px 0;
-  }
-  
-  .blog__post-link {
-    margin: 25px 0;
-    padding: 18px 40px;
-    color: var(--ui-main-text-color-light);
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    border-color: var(--ui-main-text-color-light);
-    border: solid;
-    transition: background-color 0.5s;
-  }
-  
-  .blog__post-link:hover {
-    border-color: var(--ui-main-text-color-light);
-    background-color: var(--ui-main-text-color-light);
-    color: var(--ui-link-color);
-  }
-  
-  .blog__post-link[data-expanded="true"] {
-    background-color: var(--ui-main-text-color-light);
-    color: var(--ui-link-color);
-  }
-  
+
   .blog__title-count {
-    margin-bottom: 20px;
-    color: var(--ui-main-text-color-light);
-    font-family: 'Teko', sans-serif;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 300;
+    font-size: 45px;
   }
-  
-  .countdown-container {
-    display: flex;
-    justify-content: center;
-    font-family: 'Teko', sans-serif;
-    color: var(--ui-main-text-color-light);
-    margin-top: 20px;
-  }
-  
-  .countdown-item {
-    text-align: center;
-    width: 100%;
-    margin: 0 10px;
-  }
-  
+
   .countdown-value {
+    font-size: 72px;
+  }
+
+  .countdown-label {
+    font-size: 21px;
+  }
+
+  .countdown-separator {
+    margin-top: 30px;
+  }
+
+  .blog__countdown-text {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .blog__post-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 50px;
+  }
+
+  .blog__text {
+    font-size: 25px;
+  }
+
+  .blog__title {
+    font-size: 60px;
+  }
+
+  .blog__post-category {
+    font-size: 16px;
+  }
+
+  .blog__post-title {
+    font-size: 36px;
+  }
+
+  .blog__post {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 0 5px;
+  }
+
+  .blog__title-count {
     font-size: 52px;
   }
-  
-  .countdown-label {
-    font-size: 18px;
-    margin-top: -20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-  }
-  
-  .countdown-separator {
+
+  .blog__countdown-text {
     font-size: 42px;
-    font-weight: lighter;
-    margin-top: 30px;
-    color: var(--about-beer-boutique-handwitten-text-color);
   }
-  
-  @media (min-width: 768px) {
-    .blog__post-container {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-  
-    .blog__text {
-      font-size: 21px;
-    }
-  
-    .blog__title {
-      font-size: 51px;
-    }
-  
-    .blog__post-category {
-      font-size: 14px;
-    }
-  
-    .blog__post-title {
-      font-size: 32px;
-    }
-  
-    .blog__post {
-      width: calc(50% - 20px);
-      margin: 10px;
-      padding: 0 5px;
-    }
-
-    .blog__title-count {
-      font-size: 45px;
-    }
-      
-    .countdown-value {
-      font-size: 72px;
-    }
-      
-    .countdown-label {
-      font-size: 21px;
-    }    
-  }
-  
-  @media (min-width: 992px) {
-    .blog__post-container {
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin: 0 50px;
-    }
-  
-    .blog__text {
-      font-size: 25px;
-    }
-  
-    .blog__title {
-      font-size: 60px;
-    }
-  
-    .blog__post-category {
-      font-size: 16px;
-    }
-  
-    .blog__post-title {
-      font-size: 36px;
-    }
-  
-    .blog__post {
-      width: calc(33.33% - 20px);
-      margin: 10px;
-      padding: 0 5px;
-    }
-
-    .blog__title-count {
-      font-size: 52px;
-    }
-  }
-  
+}
