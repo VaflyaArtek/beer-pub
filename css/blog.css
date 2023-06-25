@@ -132,7 +132,7 @@
   justify-content: center;
   font-family: 'Teko', sans-serif;
   color: var(--ui-main-text-color-light);
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .countdown-item {
@@ -142,7 +142,7 @@
 }
 
 .countdown-value {
-  font-size: 52px;
+  font-size: 42px;
 }
 
 .countdown-label {
@@ -153,9 +153,9 @@
 }
 
 .countdown-separator {
-  font-size: 52px;
-  font-weight: lighter;
-  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 100;
+  margin-top: 20px;
   color: var(--about-beer-boutique-handwitten-text-color);
 }
 
@@ -187,7 +187,7 @@
   transform: translate(-50%, -50%);
   color: var(--ui-light-accent-color);
   font-family: 'Teko', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   letter-spacing: 3px;
   text-align: center;
@@ -207,8 +207,8 @@
   justify-content: center;
   cursor: pointer;
   margin-top: 50px;
-  height: 65px;
-  width: 230px;
+  height: 55px;
+  width: 180px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -216,7 +216,7 @@
 .blog__button {
   color: var(--beer-boutique__reserve-table);
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -267,6 +267,11 @@
   .blog__countdown-text {
     font-size: 36px;
   }
+
+  .countdown-separator {
+    font-size: 52px;
+    margin-top: 25px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -299,7 +304,7 @@
   }
 
   .blog__title-count {
-    font-size: 52px;
+    font-size: 60px;
   }
 
   .blog__countdown-text {
