@@ -111,12 +111,20 @@
 }
 
 .blog__title-count {
-  margin-bottom: 20px;
+  margin-bottom: 0;
   color: var(--ui-main-text-color-light);
   font-family: 'Teko', sans-serif;
   text-align: center;
   font-size: 36px;
   font-weight: 300;
+}
+
+.blog__description-count {
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--ui-brand-color);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 36px;
 }
 
 .blog__title-count-decoration {
@@ -165,6 +173,7 @@
 }
 
 #blog__countdown-image {
+  position: relative;
   width: 100%;
   height: auto;
 }
@@ -195,9 +204,29 @@
   transition: opacity 0.3s;
 }
 
+.blog__description-count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  color: var(--ui-brand-color);
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 30px;
+  opacity: 1;
+  z-index: 1;
+}
+
 .blog__countdown-container:hover .blog__countdown-overlay,
 .blog__countdown-container:hover .blog__countdown-text {
   opacity: 1;
+}
+
+.blog__countdown-container:hover .blog__description-count {
+  opacity: 0;
 }
 
 .blog__table {
@@ -272,6 +301,10 @@
     font-size: 52px;
     margin-top: 25px;
   }
+
+  .blog__description-count {
+    font-size: 56px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -309,5 +342,9 @@
 
   .blog__countdown-text {
     font-size: 42px;
+  }
+
+  .blog__description-count {
+    font-size: 76px;
   }
 }
