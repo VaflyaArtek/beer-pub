@@ -127,6 +127,19 @@
   font-size: 36px;
 }
 
+.slider-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slider-button img {
+  display: block;
+  width: 24px;
+  height: 24px; 
+}
+
 .blog__title-count-decoration {
   margin-left: 10px;
   margin-right: 10px;
@@ -138,9 +151,10 @@
 .countdown-container {
   display: flex;
   justify-content: center;
+  width: 80%;
   font-family: 'Teko', sans-serif;
   color: var(--ui-main-text-color-light);
-  margin-top: 0px;
+  margin: auto;
 }
 
 .countdown-item {
@@ -303,7 +317,7 @@
   }
 
   .blog__description-count {
-    font-size: 56px;
+    font-size: 46px;
   }
 }
 
@@ -345,6 +359,6 @@
   }
 
   .blog__description-count {
-    font-size: 76px;
+    font-size: 56px;
   }
 }
