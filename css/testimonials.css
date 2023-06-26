@@ -1,5 +1,5 @@
 .testimonials {
-    background-image: var(--ui-background-img);
+
     background-repeat: repeat;
     min-width: 320px;
 }
@@ -36,7 +36,7 @@
     font-family: 'Open Sans', sans-serif; 
     font-size: 19px;
     text-align: center;
-    padding: 0 20.5px 0 20.5px;
+    /* margin: 0 20.5px 0 20.5px; */
     margin-bottom: 35px;
 }
 
@@ -116,5 +116,25 @@
 }
 
 @media (min-width: 992px) {
+    .testimonial__suptitle {
+        font-size: 28px;
+   }
 
+   .testimonial__title {
+        font-size: 62px;
+   }
+
+   .comment__name {
+        font-size: 38px;
+   }
+   
+   .comment__date {
+        font-size: 15px;
+   }
+}
+
+@media (min-width: 1300px) {
+    .testimonials__cards {
+        max-width: 1170px;
+    }
 }
