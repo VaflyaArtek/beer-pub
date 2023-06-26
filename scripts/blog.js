@@ -128,11 +128,22 @@ const slideDescription = document.getElementById('slideDescription');
 
 function showSlide(index) {
   countdownImage.src = slides[index].image;
-
   Object.assign(countdownImage.style, slides[index].imageCssProperties);
 
   sliderTitle.textContent = slides[index].title;
   slideDescription.textContent = slides[index].description;
+
+  adjustTitleFontSize();
+}
+
+function adjustTitleFontSize() {
+  const titleContainer = document.getElementById('titleContainer');
+  const maxWidth = titleContainer.offsetWidth;
+  const baseFontSize = 24;
+
+  const newFontSize = (maxWidth / 20) + baseFontSize;
+
+  sliderTitle.style.fontSize = `${newFontSize}px`;
 }
 
 function nextSlide() {
@@ -153,5 +164,7 @@ function prevSlide() {
 
 prevBtn.addEventListener('click', prevSlide);
 nextBtn.addEventListener('click', nextSlide);
+
+window.addEventListener('resize', adjustTitleFontSize);
 
 showSlide(slideIndex);
