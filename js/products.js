@@ -34,28 +34,28 @@ const products = [
         id: '1',
         name: 'Ipa',
         image: 'images/craft-beer-ipa.png',
-        alt: 'bottle Craft beer Ipa',
+		alt: 'bottle Craft beer Ipa',
         description: 'Ideal for those who prefer strong and bitter beer with rich aroma.',
-        details: ['ABV - 8%', 'IBU - 80'],
-        note: 'Very bitter, hoppy, with grainy notes.'
+		details: ['ABV - 8%', 'IBU - 80'],
+		note: 'Very bitter, hoppy, with grainy notes.'
     },
     {
         id: '2',
         name: 'Lager beer',
         image: 'images/lager-beer.png',
-        alt: 'bottle Lager beer',
+		alt: 'bottle Lager beer',
         description: 'This classic bottled beer features a wheat aroma and mild taste.',
-        details: ['ABV - 4.2%', 'IBU - 12'],
-        note: 'Light, mild, with very little bitterness.'
+		details: ['ABV - 4.2%', 'IBU - 12'],
+		note: 'Light, mild, with very little bitterness.'
     },
     {
         id: '3',
         name: 'Bitter',
         image: 'images/craft-beer.png',
-        alt: 'bottle Craft beer Bitter',
+		alt: 'bottle Craft beer Bitter',
         description: '"England\'s favorite beer" is a great choice for those who like dark varieties of beer.',
-        details: ['ABV - 4.6%', 'IBU - 40'],
-        note: 'Bitter, malty, with a slight aftertaste of toasts.'
+		details: ['ABV - 4.6%', 'IBU - 40'],
+		note: 'Bitter, malty, with a slight aftertaste of toasts.'
     }
 ]
 
@@ -66,20 +66,20 @@ function renderProducts(products) {
     productList.innerHTML = '';
 
     for (const product of products) {
-        const detailsList = product.details.map(detail => `<li class="products__carousel--article-detail">${detail}</li>`).join('');
+		const detailsList = product.details.map(detail => `<li class="products__carousel--article-detail">${detail}</li>`).join('');
 		
         productList.innerHTML += `
             <div class="products__carousel-slide">
-                <div class="products__carousel--slide-image"><img src="${product.image}" alt="${product.alt}"></div>
-                <article class="products__carousel-article">
-                    <h3 class="products__carousel--article-title">${product.name}</h3>
-                    <p class="products__carousel--article-description">${product.description}</p>
-                    <ul class="products__carousel--article-details">
-                        ${detailsList}
-                    </ul>
-                    <p class="products__carousel--article-note">${product.note}</p>
-                </article>
-            </div>`;
+				<div class="products__carousel--slide-image"><img src="${product.image}" alt="${product.alt}"></div>
+				<article class="products__carousel-article">
+					<h3 class="products__carousel--article-title">${product.name}</h3>
+					<p class="products__carousel--article-description">${product.description}</p>
+					<ul class="products__carousel--article-details">
+						${detailsList}
+					</ul>
+					<p class="products__carousel--article-note">${product.note}</p>
+				</article>
+			</div>`;
     }
 }
 
