@@ -75,9 +75,11 @@
   }
   
   #blog__countdown-image {
+    object-fit: cover;
     position: relative;
     width: 100%;
     height: auto;
+    max-height: 205px;
   }
   
   .blog__countdown-overlay {
@@ -159,6 +161,10 @@
 @media (min-width: 768px) {
   .blog__title-count {
     font-size: 45px;
+  }
+
+  #blog__countdown-image {
+    max-height: 294px;
   }
 
   .countdown-value {
