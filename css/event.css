@@ -1,0 +1,202 @@
+.blog__title-count {
+    margin-bottom: 0;
+    color: var(--ui-main-text-color-light);
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+  }
+  
+  .blog__description-count {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--ui-brand-color);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 36px;
+  }
+  
+  .slider-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .slider-button img {
+    display: block;
+    width: 24px;
+    height: 24px; 
+  }
+  
+  .blog__title-count-decoration {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 42px;
+    font-weight: lighter;
+    color: var(--about-beer-boutique-handwitten-text-color);
+  }
+  
+  .countdown-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    font-family: 'Teko', sans-serif;
+    color: var(--ui-main-text-color-light);
+    margin: auto;
+  }
+  
+  .countdown-item {
+    text-align: center;
+    width: 100%;
+    margin: 0 10px;
+  }
+  
+  .countdown-value {
+    font-size: 42px;
+  }
+  
+  .countdown-label {
+    font-size: 18px;
+    margin-top: -20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .countdown-separator {
+    font-size: 22px;
+    font-weight: 100;
+    margin-top: 20px;
+    color: var(--about-beer-boutique-handwitten-text-color);
+  }
+  
+  .blog__countdown-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  #blog__countdown-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .blog__countdown-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .blog__countdown-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--ui-light-accent-color);
+    font-family: 'Teko', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .blog__description-count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    color: var(--ui-brand-color);
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .blog__countdown-container:hover .blog__countdown-overlay,
+  .blog__countdown-container:hover .blog__countdown-text {
+    opacity: 1;
+  }
+  
+  .blog__countdown-container:hover .blog__description-count {
+    opacity: 0;
+  }
+  
+  .blog__table {
+    background-color: var(--ui-brand-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 50px;
+    height: 55px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .blog__button {
+    color: var(--beer-boutique__reserve-table);
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  
+  .blog__bottom {
+    margin-bottom: 50px;
+  }
+
+@media (min-width: 768px) {
+  .blog__title-count {
+    font-size: 45px;
+  }
+
+  .countdown-value {
+    font-size: 72px;
+  }
+
+  .countdown-label {
+    font-size: 21px;
+  }
+
+  .countdown-separator {
+    margin-top: 30px;
+  }
+
+  .blog__countdown-text {
+    font-size: 36px;
+  }
+
+  .countdown-separator {
+    font-size: 52px;
+    margin-top: 25px;
+  }
+
+  .blog__description-count {
+    font-size: 46px;
+  }
+}
+
+@media (min-width: 992px) {
+  .blog__title-count {
+    font-size: 52px;
+  }
+
+  .blog__countdown-text {
+    font-size: 42px;
+  }
+
+  .blog__description-count {
+    font-size: 56px;
+  }
+}
