@@ -1,20 +1,32 @@
 const countdownElement = document.getElementById('countdown');
 const countdownElement2 = document.getElementById('countdown2');
+const countdownElement3 = document.getElementById('countdown3');
 
 let currentSlideIndex = 0;
 let currentSlideIndex2 = 0;
+let currentSlideIndex3 = 0;
+
 const slideData = [
   {
     endDate: new Date('July 5, 2023'),
     imageSrc: 'images/three-people-drink-beer.jpg',
     description: 'this Wednesday',
-    title: 'BAVARIAN BEER DAY'
+    title: 'BAVARIAN BEER DAY',
+    titleDescription: 'Lively celebration of Bavarian brews and culture.'
   },
   {
     endDate: new Date('July 15, 2023'),
     imageSrc: 'images/ukrainian-festival.png',
     description: 'next Saturday',
-    title: 'UKRAINIAN BEER FESTIVAL'
+    title: 'BEER FESTIVAL',
+    titleDescription: 'Vibrant celebration of beer with music, food, and fun.'
+  },
+  {
+    endDate: new Date('Augest 1, 2023'),
+    imageSrc: 'images/beer-tasting-augest.jpeg',
+    description: 'in Augest',
+    title: 'BEER TASTING',
+    titleDescription: 'Exquisite beer sampling experience: savor, appreciate, and enjoy.'
   },
 ];
 
@@ -57,10 +69,12 @@ function updateCountdown() {
 function updateSlide(index) {
   const slide = slideData[index];
   const countdownTitle = document.getElementById('sliderTitle');
-  const countdownImage = document.getElementById('blog__countdown-image');
+  const countdownTitleDescription = document.getElementById('sliderTitleDescription');
+  const countdownImage = document.getElementById('event__countdown-image');
   const countdownDescription = document.getElementById('slideDescription');
 
   countdownTitle.textContent = slide.title;
+  countdownTitleDescription.textContent = slide.titleDescription;
   countdownImage.src = slide.imageSrc;
   countdownDescription.textContent = slide.description;
   updateCountdown();

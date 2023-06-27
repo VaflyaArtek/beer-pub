@@ -1,13 +1,32 @@
-.blog__title-count {
+.event__text {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--ui-brand-color);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 14px;
+  }
+
+.event__slider-title{
     margin-bottom: 0;
     color: var(--ui-main-text-color-light);
     font-family: 'Teko', sans-serif;
     text-align: center;
     font-size: 36px;
     font-weight: 300;
+    padding-bottom: 20px;
+  }
+
+  .event__title-description {
+    margin-bottom: 20px;
+    padding: 0 20px 0 20px;
+    text-align: center;
+    color: var(--ui-block-description-color);
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    line-height: 28px;
   }
   
-  .blog__description-count {
+  .event__description-count {
     margin-bottom: 20px;
     text-align: center;
     color: var(--ui-brand-color);
@@ -25,18 +44,10 @@
   .slider-button img {
     display: block;
     width: 24px;
-    height: 24px; 
+    height: 24px;
   }
   
-  .blog__title-count-decoration {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 42px;
-    font-weight: lighter;
-    color: var(--about-beer-boutique-handwitten-text-color);
-  }
-  
-  .countdown-container {
+  .event__countdown-container {
     display: flex;
     justify-content: center;
     width: 80%;
@@ -69,20 +80,20 @@
     color: var(--about-beer-boutique-handwitten-text-color);
   }
   
-  .blog__countdown-container {
+  .event__countdown-container{
     position: relative;
     width: 100%;
   }
   
-  #blog__countdown-image {
+  #event__countdown-image {
     object-fit: cover;
     position: relative;
     width: 100%;
     height: auto;
-    max-height: 205px;
+    max-height: 131px;
   }
   
-  .blog__countdown-overlay {
+  .event__countdown-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -93,7 +104,7 @@
     transition: opacity 0.3s;
   }
   
-  .blog__countdown-text {
+  .event__countdown-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -108,7 +119,7 @@
     transition: opacity 0.3s;
   }
   
-  .blog__description-count {
+  .event__description-count {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -124,31 +135,33 @@
     z-index: 1;
   }
   
-  .blog__countdown-container:hover .blog__countdown-overlay,
-  .blog__countdown-container:hover .blog__countdown-text {
+  .event__countdown-container:hover .event__countdown-overlay,
+  .event__countdown-container:hover .event__countdown-text {
     opacity: 1;
   }
   
-  .blog__countdown-container:hover .blog__description-count {
+  .event__countdown-container:hover .event__description-count {
     opacity: 0;
   }
   
-  .blog__table {
+  .event__table {
     background-color: var(--ui-brand-color);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     margin-top: 50px;
+    margin-bottom: 50px;
     height: 55px;
     width: 180px;
     margin-left: auto;
     margin-right: auto;
   }
   
-  .blog__button {
+  .event__button {
     color: var(--beer-boutique__reserve-table);
     font-family: "Open Sans", sans-serif;
+    padding: 18px 38px;
     font-size: 12px;
     font-weight: bold;
   }
@@ -159,11 +172,20 @@
   }
 
 @media (min-width: 768px) {
-  .blog__title-count {
-    font-size: 45px;
+  .event__text {
+    font-size: 21px;
   }
 
-  #blog__countdown-image {
+  .event__slider-title {
+    font-size: 45px;
+    padding-bottom: 15px;
+  }
+
+  .slider-button img {
+    margin-bottom: 5px;
+  }
+
+  #event__countdown-image {
     max-height: 294px;
   }
 
@@ -179,7 +201,7 @@
     margin-top: 30px;
   }
 
-  .blog__countdown-text {
+  .event__countdown-text {
     font-size: 36px;
   }
 
@@ -188,21 +210,26 @@
     margin-top: 25px;
   }
 
-  .blog__description-count {
+  .event__description-count {
     font-size: 46px;
   }
 }
 
 @media (min-width: 992px) {
-  .blog__title-count {
+  .event__text {
+    font-size: 25px;
+  }
+  
+  .event__slider-title {
     font-size: 52px;
+    padding-bottom: 10px;
   }
 
-  .blog__countdown-text {
+  .event__countdown-text{
     font-size: 42px;
   }
 
-  .blog__description-count {
+  .event__description-count {
     font-size: 56px;
   }
 }
