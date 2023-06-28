@@ -193,6 +193,9 @@
    .comment__date {
         font-size: 15px;
    }
+   .testimonials__container {
+    max-width: 89%;
+}
 }
 
 @media (min-width: 1024px) {
@@ -202,10 +205,10 @@
 }
 
 @media (min-width: 1300px) {
-        .testimonials__container {
-        max-width: 75%;
+    .testimonials__container {
+        max-width: 73.2%;
     }
     .testimonials__cards {
-        max-width: 1170px;
+        max-width: 75%;
     }
 }
