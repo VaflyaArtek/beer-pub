@@ -1,29 +1,68 @@
-.about-beer-boutique__title {
-    text-align: center;
-    font-size: 62px;
+
+.about-beer-boutique__main{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    margin-top: 0;
+    background-color: var(--about-beer-boutique-title-text-color);
 }
 
+.about-beer-boutique__title {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Teko',sans-serif;
+    font-weight: 400;
+    padding: 40px 0px 30px;
+    background-color: var(--about-beer-boutique-handwitten-text-color);
+    
+}
+.about-beer-boutique__container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+
+}
+.about-beer-boutique__text__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: visible;
+    position: relative;
+   bottom: 70px;
+   line-height: 2;
+   height: 500px;
+   width: 650px;
+}
 .about-beer-boutique__image {
-    width: 602px;
-    height: 630px;
+    width: 700px;
+    height: 700px;
+   
+
 }
 
 .about-beer-boutique__handwritten__text {
     color: var(--about-beer-boutique-handwitten-text-color);
     font-size: 28px;
+    font-family: 'Shadows Into Light',cursive;
+  
 }
 
 .about-beer-boutique__heading__text {
     color: var(--about-beer-boutique-heading-text-color);
-    font-size: 62px;
+    font-size: 40px;
+    font-family: 'Teko',sans-serif;
 }
 
 .about-beer-boutique__subheading__text {
     color: var(--about-beer-boutique-subheading-text-color);
     font-size: 19px;
+    font-family: 'Open Sans',sans-serif;
 }
 
 .about-beer-boutique__main__text {
     color: var(--about-beer-boutique-main-text-color);
     font-size: 17px;
+    font-family: 'Open Sans',sans-serif;
 }
