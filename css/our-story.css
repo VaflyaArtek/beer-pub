@@ -61,12 +61,10 @@
 .our-story__img-container {
   max-height: 447px;
   overflow: hidden;
-  position: relative;
 }
 
 .our-story__img-container img {
   object-fit: cover;
-  width: 100%;
   max-height: 640px;
 }
 
