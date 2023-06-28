@@ -40,6 +40,19 @@
   --scrollbar-thumb: #00000081;
   --content-bg-accent: #000000be;
   --content-bg: #00000000;
+  --testimonials-cards-color: rgba(9, 6, 6, 1);
+  --main-color: #9d9d9d;
+  --main-font: 'Open Sans', sans-serif;
+  --main-title-color: #ffc123;
+  --main-title-font: 'Shadows Into Light', cursive;
+  --main-subtitle-color: #fcfaf8;
+  --main-heading-font: 'Teko', sans-serif;
+  --main-heading-color: #fff;
+  --main-description-color: #ccc;
+  --main-details-color: #fff;
+  --main-background-color: #111;
+  --arrow-background: #020200;
+  font-family: var(--main-font);
 }
 
 .container {
@@ -53,7 +66,9 @@
 }
 
 body {
-  background-color: #4e4949;
+  background-color: var(--main-background-color);
+  background-image: var(--ui-background-img);
+  background-repeat: repeat;
   overflow-x: hidden;
 }
 
@@ -67,6 +82,7 @@ a {
 
 img {
   width: 100%;
+  display: block;
 }
 
 .title-section {

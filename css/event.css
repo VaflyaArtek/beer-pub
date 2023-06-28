@@ -1,0 +1,235 @@
+.event__text {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--ui-brand-color);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 14px;
+  }
+
+.event__slider-title{
+    margin-bottom: 0;
+    color: var(--ui-main-text-color-light);
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    padding-bottom: 20px;
+  }
+
+  .event__title-description {
+    margin-bottom: 20px;
+    padding: 0 20px 0 20px;
+    text-align: center;
+    color: var(--ui-block-description-color);
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    line-height: 28px;
+  }
+  
+  .event__description-count {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--ui-brand-color);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 36px;
+  }
+  
+  .slider-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .slider-button img {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .event__countdown-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    font-family: 'Teko', sans-serif;
+    color: var(--ui-main-text-color-light);
+    margin: auto;
+  }
+  
+  .countdown-item {
+    text-align: center;
+    width: 100%;
+    margin: 0 10px;
+  }
+  
+  .countdown-value {
+    font-size: 42px;
+  }
+  
+  .countdown-label {
+    font-size: 18px;
+    margin-top: -20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .countdown-separator {
+    font-size: 22px;
+    font-weight: 100;
+    margin-top: 20px;
+    color: var(--about-beer-boutique-handwitten-text-color);
+  }
+  
+  .event__countdown-container{
+    position: relative;
+    width: 100%;
+  }
+  
+  #event__countdown-image {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 131px;
+  }
+  
+  .event__countdown-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .event__countdown-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--ui-light-accent-color);
+    font-family: 'Teko', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .event__description-count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    color: var(--ui-brand-color);
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .event__countdown-container:hover .event__countdown-overlay,
+  .event__countdown-container:hover .event__countdown-text {
+    opacity: 1;
+  }
+  
+  .event__countdown-container:hover .event__description-count {
+    opacity: 0;
+  }
+  
+  .event__table {
+    background-color: var(--ui-brand-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 55px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .event__button {
+    color: var(--beer-boutique__reserve-table);
+    font-family: "Open Sans", sans-serif;
+    padding: 18px 38px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  
+  .blog__bottom {
+    margin-bottom: 50px;
+  }
+
+@media (min-width: 768px) {
+  .event__text {
+    font-size: 21px;
+  }
+
+  .event__slider-title {
+    font-size: 45px;
+    padding-bottom: 15px;
+  }
+
+  .slider-button img {
+    margin-bottom: 5px;
+  }
+
+  #event__countdown-image {
+    max-height: 294px;
+  }
+
+  .countdown-value {
+    font-size: 72px;
+  }
+
+  .countdown-label {
+    font-size: 21px;
+  }
+
+  .countdown-separator {
+    margin-top: 30px;
+  }
+
+  .event__countdown-text {
+    font-size: 36px;
+  }
+
+  .countdown-separator {
+    font-size: 52px;
+    margin-top: 25px;
+  }
+
+  .event__description-count {
+    font-size: 46px;
+  }
+}
+
+@media (min-width: 992px) {
+  .event__text {
+    font-size: 25px;
+  }
+  
+  .event__slider-title {
+    font-size: 52px;
+    padding-bottom: 10px;
+  }
+
+  .event__countdown-text{
+    font-size: 42px;
+  }
+
+  .event__description-count {
+    font-size: 56px;
+  }
+}

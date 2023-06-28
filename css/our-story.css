@@ -1,0 +1,134 @@
+.our-story {
+  min-width: 320px;
+}
+
+.our-story__post-container {
+  background-color: var(--testimonials-cards-color);
+}
+
+.our-story__post {
+  padding: 90px 30px 40px 30px;
+  height: 100%;
+}
+
+.our-story__pre-title {
+  margin-bottom: 25px;
+  color: var(--ui-brand-color);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 14px;
+}
+
+.our-story__title {
+  margin-bottom: 30px;
+  color: var(--ui-main-text-color-light);
+  font-family: 'Teko', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.our-story__description {
+  margin-bottom: 25px;
+  color: var(--ui-block-description-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  line-height: 28px;
+}
+
+.our-story__text {
+  color: var(--ui-text-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.our-story__button {
+  margin: 50px 0 70px 0;
+}
+
+.our-story__link {
+  margin: 35px 0;
+  padding: 19px 40px;
+  color: var(--ui-block-title-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  background-color: var(--ui-brand-color);
+  transition: background-color 0.5s;
+}
+
+.our-story__img-container {
+  max-height: 447px;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-story__img-container img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 640px;
+}
+
+@media (min-width: 768px) {
+  .our-story {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 840px;
+  }
+
+  .our-story__post-container {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .our-story__post {
+    max-width: 625px;
+    max-height: 840px;
+  }
+
+  .our-story__img-container {
+    flex: 0 0 50%;
+    max-width: 50%;
+    max-height: 840px;
+  }
+
+  .our-story__img-container img {
+    max-height: none;
+    height: 100%;
+  }
+
+  .our-story__pre-title {
+    margin-top: 40px;
+    font-size: 21px;
+  }
+
+  .our-story__title {
+    font-size: 51px;
+    line-height: 51px;
+  }
+}
+
+@media (min-width: 992px) {
+  .our-story {
+    max-height: 700px;
+  }
+
+  .our-story__pre-title {
+    font-size: 28px;
+  }
+
+  .our-story__title {
+    font-size: 62px;
+    line-height: 51px;
+  }
+
+  .our-story__post {
+    margin: auto;
+    max-height: 700px;
+  }
+
+  .our-story__img-container {
+    max-height: 700px;
+  }
+}
