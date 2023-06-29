@@ -187,6 +187,16 @@
     .contacts__title {
       font-size: 51px;
     }
+
+    #contacts__weather-widget p {
+      padding-left: 15px;
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    #contacts__weather-widget img {
+      max-width: 33px;
+    }
   
     .contacts__form-background {
       padding: 80px 70px 50px 70px;
@@ -228,6 +238,12 @@
     .contacts__item-image {
       width: 45px;
       height: 45px;
+    }
+
+    #contacts__weather-widget p {
+      padding-left: 15px;
+      font-size: 20px;
+      margin-bottom: 10px;
     }
   
     .contacts__map-form-container {

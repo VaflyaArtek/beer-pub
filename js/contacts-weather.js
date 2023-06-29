@@ -9,9 +9,9 @@ async function updateWeatherWidget() {
         const description = weather.weather[0].description;
         let weatherIcon = '';
 
-        if (description.includes('cloud') || description.includes('clouds')) {
+        if (description.includes('clouds')) {
             weatherIcon = '<img src="images/cloud-icon.png" alt="Cloudy">';
-        } else if (description.includes('sun') || description.includes('clear')) {
+        } else if (description.includes('clear')) {
             weatherIcon = '<img src="images/sun-icon.png" alt="Sunny">';
         } else if (description.includes('rain') || description.includes('drizzle')) {
             weatherIcon = '<img src="images/rain-icon.png" alt="Rainy">';
