@@ -1,0 +1,26 @@
+.our-team__description {
+    padding-top: 155px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 85.5%;
+}
+
+.our-team__suptitle {
+    color: var(--ui-brand-color);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.our-team__title {
+    color: var(--about-beer-boutique-heading-text-color);
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-weight: 700;
+}
