@@ -32,3 +32,27 @@
 .music__volume-slider {
     margin-top: 20px;
 }
+
+@media (max-width: 444px) {
+    .music__title {
+        font-size: 20px;
+    }
+
+    /* Mobile First */
+    .fallout {
+        padding: 1rem;
+    }
+
+    .music__button-group {
+        margin-top: 1rem;
+    }
+
+    #music__yes-btn,
+    #music__no-btn {
+        font-size: 1rem;
+    }
+
+    .music__volume-slider {
+        margin-top: 1rem;
+    }
+}
