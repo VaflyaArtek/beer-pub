@@ -65,11 +65,17 @@
 }
 
 .our-story-position {
-  max-height: 500px;
+  max-height: 700px;
+}
+
+.beer-recommendation .our-story__post {
+  padding: 90px 30px 40px 30px;
 }
 
 .beer-recommendation-img {
   flex: 0 0 50%;
+  border-left: solid;
+  border-color: var(--ui-brand-color);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -112,6 +118,15 @@
   .our-story__title {
     font-size: 51px;
     line-height: 51px;
+  }
+
+  .beer-recommendation {
+    border-right: solid;
+    border-color: var(--ui-brand-color);
+  }
+
+  .beer-recommendation .our-story__post {
+    padding: 0;
   }
 }
 
