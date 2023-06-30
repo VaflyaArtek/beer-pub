@@ -177,3 +177,23 @@
   }
 
 }
+
+@media (max-width: 500px) {
+
+  .products__carouse {
+    position: relative;  
+  }
+  
+  .products__carousel--btn-prev,
+  .products__carousel--btn-next {
+    position: absolute;
+    top: 45%;
+    left: 5px;
+  }
+
+  .products__carousel--btn-next {
+    left: auto;
+    right: 5px;
+  }
+  
+}

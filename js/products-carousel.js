@@ -24,18 +24,6 @@ function updateCarousel() {
     carouselInner.style.transform = `translateX(-${currentIndex * (100 / slidesPerView)}%)`;
 }
 
-cloneSlides();
-
-function cloneSlides() {
-  const firstSlideClone = productCards[0].cloneNode(true);
-  const lastSlideClone = productCards[productCards.length - 1].cloneNode(true);
-
-  carouselInner.appendChild(firstSlideClone);
-  carouselInner.insertBefore(lastSlideClone, productCards[0]);
-
-  productCards = carouselInner.querySelectorAll('.products__carousel-slide'); 
-}
-
 prevButton.addEventListener('click', function() {
     currentIndex = Math.max(currentIndex - 1, 0);
     updateCarousel();
