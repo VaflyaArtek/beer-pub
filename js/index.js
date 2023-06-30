@@ -1,4 +1,5 @@
 document.addEventListener("partialsLoaded", () => {
+    import('./header.js');
     import('./blog.js');
     import('./event.js');
     import('./products.js');
