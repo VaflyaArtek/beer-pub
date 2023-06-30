@@ -1,5 +1,4 @@
-
-.about-beer-boutique__main{
+.about-beer-boutique__main {
     display: grid;
     grid-template-columns: auto auto;
     padding-top: 1px;
@@ -12,58 +11,78 @@
 .about-beer-boutique__title {
     text-align: center;
     font-size: 40px;
-    font-family: 'Teko',sans-serif;
+    font-family: 'Teko', sans-serif;
     font-weight: 400;
     padding: 40px 0px 30px;
     background-color: var(--about-beer-boutique-handwitten-text-color);
-    
-}
-.about-beer-boutique__container {
-display: grid;
-grid-template-columns: 1fr 1fr;
-align-items: center;
 
 }
-.about-beer-boutique__text__container{
+
+.about-beer-boutique__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+.about-beer-boutique__text__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: visible;
     position: relative;
-   bottom: 70px;
-   line-height: 2;
-   height: 500px;
-   width: 650px;
+    bottom: 70px;
+    line-height: 2;
+    height: 500px;
+    width: 650px;
+    margin-left: 30px;
 }
+
 .about-beer-boutique__image {
     width: 700px;
     height: 700px;
-   
 
 }
 
 .about-beer-boutique__handwritten__text {
     color: var(--about-beer-boutique-handwitten-text-color);
     font-size: 28px;
-    font-family: 'Shadows Into Light',cursive;
-  
+    font-family: 'Shadows Into Light', cursive;
+
 }
 
 .about-beer-boutique__heading__text {
     color: var(--about-beer-boutique-heading-text-color);
     font-size: 40px;
-    font-family: 'Teko',sans-serif;
+    font-family: 'Teko', sans-serif;
 }
 
 .about-beer-boutique__subheading__text {
     color: var(--about-beer-boutique-subheading-text-color);
     font-size: 19px;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .about-beer-boutique__main__text {
     color: var(--about-beer-boutique-main-text-color);
     font-size: 17px;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
-
+@media (min-width: 768px){
+    .about-beer-boutique__main{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-columns: auto auto;
+    
+       
+    }
+    .about-beer-boutique__image{
+        grid-row: 1/2;
+        width: 100% !important;
+        height: auto;
+    }
+    .about-beer-boutique__text__container{
+        grid-row: 2/3;
+        margin-top: 50px;
+    }
+}
