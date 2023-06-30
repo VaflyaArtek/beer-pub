@@ -1,5 +1,4 @@
 .testimonials {
-
     background-repeat: repeat;
     min-width: 320px;
 }
@@ -28,7 +27,6 @@
     margin-bottom: 16px;
     text-transform: uppercase;
     box-sizing: border-box;
-    
 }
 
 .testimonial__text {
@@ -65,12 +63,13 @@
     margin-bottom: 20px;
 }
 
+
 .comment__text {
     color: var(--ui-text-color);
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     text-align: center;
-    margin: 0 30px 20px 30px;
+    padding: 0 30px 20px 30px;
 }
 
 .comment__date {
@@ -82,6 +81,51 @@
     margin-bottom: 35px;
 
 }
+
+.testimonials__container {
+    padding-top: 80px;
+    min-width: 272px; 
+    margin: auto;
+    max-width: 85.3%;
+
+}
+
+.testimonials__video{
+    background-image: url(https://res2.weblium.site/res/6234756258d0bb00237f54b3/623dc90a1f0e1c00225da202_optimized_1396.webp);
+    height: 432px; 
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-button {
+    width: 70px;
+    height: 70px;
+    background-color: var(--ui-brand-color);
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+  }
+  
+  .triangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid var(--ui-block-title-color);
+    
+  }
+
+
 
 @media (min-width: 768px) {
     .testimonial__suptitle {
@@ -113,6 +157,23 @@
     .comment__name {
         font-size: 32px;
     }
+
+    .testimonials__container {
+        max-width: 87.1%;
+    }
+    .testimonials__video {
+        height: 658px;  
+    }
+
+    .player-button {
+        width: 100px;
+        height: 100px;
+    }
+    .triangle {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 20px solid var(--ui-block-title-color);
+    }
 }
 
 @media (min-width: 992px) {
@@ -131,10 +192,27 @@
    .comment__date {
         font-size: 15px;
    }
+   .testimonials__container {
+    max-width: 89%;
+}
+}
+
+@media (min-width: 1024px) {
+    .testimonials__video {
+        height: 670px;  
+    }
 }
 
 @media (min-width: 1300px) {
     .testimonials__cards {
-        max-width: 1170px;
+        max-width: 65%;
     }
+
+    .card {
+        height: 447px;
+    }
+    .testimonials__container {
+        max-width: 63.3%;
+    }
+
 }

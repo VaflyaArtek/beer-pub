@@ -1,23 +1,96 @@
-.hiring-and-boutique{
-    font-family: 'Open Sans', sans-serif; 
+.hiring-and-boutique {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.hiring{
+.hiring {
     background-image: url(../images/about-hiring-and-boutuque-background.svg);
     max-width: 85%;
     margin: 30px auto;
-    min-height: 200px;
+    min-height: 300px;
 }
 
-.hiring__btn{
+.hiring__title {
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.right {
+    float: left;
+}
+
+.hiring__subtitle {
+    font-size: 1.5rem;
+    color: var(--ui-dark-accent-color);
+    margin-bottom: 15px;
+}
+
+.hiring__btn {
     text-decoration: underline;
     color: var(--ui-caption-color);
     font-weight: 700;
     margin-left: auto;
 }
 
-.hiring__text{
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-around; 
+.hiring__text {
+    margin: 20px 45px;
+}
+
+.boutique__img-wrap {
+    height: 633px;
+}
+
+.boutique__three-glass-beer {
+    height: 100%;
+    object-fit: cover;
+}
+
+.boutique {
+    position: relative;
+}
+
+.boutique__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+}
+
+.boutique__text {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+}
+
+@media (min-width: 769px) {
+    .hiring {
+        min-height: 200px;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .hiring__title {
+        margin-bottom: 0;
+    }
+
+    .hiring__subtitle {
+        margin-bottom: 0;
+    }
+
+    .boutique__title {
+        left: 30%;
+    }
+
+    .boutique__text{
+        top: 65%;
+        left: 24%;
+    }
 }

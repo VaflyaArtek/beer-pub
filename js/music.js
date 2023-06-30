@@ -1,40 +1,40 @@
-// function playMusic(volume) {
-//     var audio = document.getElementById("music__audio");
-//     audio.volume = volume;
-//     audio.play();
-//     hidefallout();
-//     alert("Music on!");
-// }
+const audio = document.getElementById("music__audio");
+const fallout = document.getElementById("fallout");
+const yesButton = document.getElementById("music__yes-btn");
+const noButton = document.getElementById("music__no-btn");
+const volumeSlider = document.getElementById("music__volume-slider");
 
-// function openPageWithoutMusic() {
-//     hidefallout();
-//     alert("Music off!");
-// }
+const playMusic = (volume) => {
+    if (!audio) return;
+    audio.volume = volume;
+    audio.play();
+    hidefallout();
+}
 
-// function hidefallout() {
-//     var fallout = document.getElementById("fallout");
-//     fallout.style.display = "none";
-// }
+const openPageWithoutMusic = () => {
+    hidefallout();
+}
 
-// function setupEventListeners() {
-//     var yesButton = document.getElementById("music__yes-btn");
-//     var noButton = document.getElementById("music__no-btn");
-//     var volumeSlider = document.getElementById("music__volume-slider");
+const hidefallout = () => {
+    if (!fallout) return;
+    fallout.style.display = "none";
+}
 
-//     if (!yesButton || !noButton || !volumeSlider) {
-//         return false;
-//     }
+const setupEventListeners = () => {
+    if (!yesButton || !noButton || !volumeSlider) {
+        return false;
+    }
 
-//     yesButton.addEventListener("click", function() {
-//         var volume = volumeSlider.value / 100;
-//         playMusic(volume);
-//     });
-//     noButton.addEventListener("click", openPageWithoutMusic);
-//     return true;
-// }
+    yesButton.addEventListener("click", () => {
+        const volume = volumeSlider.value / 100;
+        playMusic(volume);
+    });
+    noButton.addEventListener("click", openPageWithoutMusic);
+    return true;
+}
 
-// var intervalID = setInterval(function() {
-//     if (setupEventListeners()) {
-//         clearInterval(intervalID);
-//     }
-// }, 100);
+const intervalID = setInterval(() => {
+    if (setupEventListeners()) {
+        clearInterval(intervalID);
+    }
+}, 100);
