@@ -20,6 +20,8 @@ window.addEventListener('resize', updateSlidesPerView);
 
 updateSlidesPerView();
 
+updateCarousel();
+
 function updateCarousel() {
     carouselInner.style.transform = `translateX(-${currentIndex * (100 / slidesPerView)}%)`;
 }
