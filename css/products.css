@@ -188,12 +188,12 @@
   .products__carousel--btn-next {
     position: absolute;
     top: 45%;
-    left: 5px;
+    left: 15px;
   }
 
   .products__carousel--btn-next {
     left: auto;
-    right: 5px;
+    right: 15px;
   }
   
 }
