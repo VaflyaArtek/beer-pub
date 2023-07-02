@@ -22,7 +22,7 @@ const slideData = [
     titleDescription: 'Vibrant celebration of beer with music, food, and fun.'
   },
   {
-    endDate: new Date('Augest 1, 2023'),
+    endDate: new Date('August 1, 2023'),
     imageSrc: 'images/beer-tasting-augest.jpeg',
     description: 'in Augest',
     title: 'BEER TASTING',
