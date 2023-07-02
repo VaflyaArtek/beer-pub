@@ -9,7 +9,7 @@ arrowButton.addEventListener('click', () => {
         setTimeout(() => {
             beerRecommendationSection.style.display = 'none';
             beerRecommendationSection.style.animation = 'none';
-            document.getElementById('botton-text').textContent = 'more about cool beer';
+            document.getElementById('botton-text').textContent = 'more about beer';
             document.getElementById('arrow__botton-up').style.transform = 'rotate(-90deg)';
         }, 500);
     } else {

@@ -102,8 +102,13 @@
   margin: 0;
 }
 
+#botton-text {
+  padding-top: 20px;
+}
+
 #arrow__botton {
-  padding: 10px;
+  padding: 10px 70px 50px 70px;
+  height: 40px;
 }
 
 #arrow__botton-up {
@@ -138,12 +143,18 @@
 
 @keyframes pulse {
    0% {
+    width: 25px;
+    height: 25px;
       opacity: 1;
    }
    50% {
+    width: 20px;
+    height: 20px;
       opacity: 0.5;
    }
    100% {
+    width: 25px;
+    height: 25px;
       opacity: 1;
    }
 }
