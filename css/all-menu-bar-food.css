@@ -1,13 +1,16 @@
-body{
-    opacity: 1;
+.menu__line {
+    display: inline-block;
+    width: 100%;
+    background-color: var(--main-title-color);
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    padding: 40px 0 20px;
+    text-align: center;
 
 }
-.menu__bar {
-    display: block;
-    opacity: 1;
-}
 
-.title__bar {
+.title__bar,
+.title__food {
     color: var(--ui-brand-color);
     font-family: 'Shadows Into Light';
     font-size: 21px;
@@ -16,7 +19,8 @@ body{
 
 }
 
-.menu__bar h2 {
+.menu__bar h2,
+.menu__food h2 {
     font-family: 'Teko', 'Sans-serif';
     font-size: 51px;
     color: var(--ui-main-text-color-light);
@@ -24,7 +28,8 @@ body{
     opacity: 1;
 }
 
-.top__choice h4 {
+.menu__bar h4,
+.menu__food h4 {
     font-family: 'Open Sans', 'sans-serif';
     font-size: 19px;
     color: var(--ui-block-description-color);
@@ -33,27 +38,19 @@ body{
     line-height: 1.6;
 }
 
-.choice__image {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: auto;
-    justify-content: center;
-    align-content: center;
+.bar__carousel,
+.food__carousel {
+    margin: 20px;
+    padding: 24px;
+}
+
+.menu__food-image {
+
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 40px;
     margin-bottom: 20px;
-}
+    justify-content: center;
 
-.sort__img {
-    overflow: hidden;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.sort__img img {
-    width: 120px;
-    height: 120px;
-    margin-left: 10px;
 }
 
 .best__dish {
@@ -63,6 +60,7 @@ body{
     margin-right: 20px; */
 }
 
+.bar__name,
 .dish__name {
     color: var(--ui-main-text-color-light);
     font-family: 'Teko', sans-serif;
@@ -79,49 +77,30 @@ body{
     height: fit-content;
 }
 
-/* .dish__name::after {
-    content: "________";
-    color: var(--ui-text-color);
-    height: 1px;
-    width: 100%;
-} */
 .underline {
     display: flex;
-  
     width: 100%;
-    border-bottom: 1px solid #fff;
-   height: 20px;
+    border-bottom: 1px solid var(--ui-text-color);
+    height: 20px;
     flex-grow: initial;
     margin: 7px auto;
 
 }
 
-.dish__about {
+.bar__about,
+.food__about {
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     color: var(--ui-text-color);
 }
 
+.bar__price,
 .dish__price {
     color: var(--ui-brand-color);
     font-family: 'Teko', sans-serif;
     display: flex;
     font-size: 26px;
 }
-
-.menu__link {
-    display: block;
-    max-width: fit-content;
-    padding: 18px 26px;
-
-    background-color: var(--ui-brand-color);
-    color: var(--ui-block-title-color);
-}
-
-a.menu__link {
-    margin: 30px auto 50px auto;
-}
-
 
 @media (min-width: 500px) {
     .sort__img img {

@@ -73,18 +73,11 @@
     height: fit-content;
 }
 
-/* .dish__name::after {
-    content: "________";
-    color: var(--ui-text-color);
-    height: 1px;
-    width: 100%;
-} */
 .underline {
     display: flex;
-  
     width: 100%;
-    border-bottom: 1px solid #fff;
-   height: 20px;
+    border-bottom: 1px solid var(--ui-text-color);
+    height: 20px;
     flex-grow: initial;
     margin: 7px auto;
 
