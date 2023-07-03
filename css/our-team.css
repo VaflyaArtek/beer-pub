@@ -41,6 +41,7 @@
 .member{
     max-width: 85%;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .member__name {
@@ -81,7 +82,6 @@
 
     .member {
         height: 100%;
-        margin-bottom: 50px;
     }
 
     .member__name {
@@ -90,25 +90,25 @@
 
     .our-team__members {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(12, 1fr);
         justify-content: center;
         align-items: center; 
+    }
+
+    .member-1 {
+        grid-column: 1 / 7;
+    }
+
+    .member-2 {
+        grid-column: 7 / 13;
+    }
+
+    .member-3 {
+        grid-column: 4 / 10;
     }
 }
 
 @media (min-width: 992px) { 
-
-
-    .member__description {
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    .member__content {
-        align-items: stretch;
-    }
-    
     .our-team__suptitle {
         font-size: 28px;
     }
@@ -130,5 +130,17 @@
         grid-template-columns: repeat(3, 1fr);
         max-width: 66%; 
         margin: auto;
+    }
+
+    .member-1 {
+        grid-column: 1 / 2;
+    }
+
+    .member-2 {
+        grid-column: 2 / 3;
+    }
+
+    .member-3 {
+        grid-column: 3 / 4;
     }
 }
