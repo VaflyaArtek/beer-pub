@@ -79,6 +79,11 @@
         font-size: 51px;
     }
 
+    .member {
+        height: 100%;
+        margin-bottom: 50px;
+    }
+
     .member__name {
         font-size: 32px;
     }
@@ -91,7 +96,9 @@
     }
 }
 
-@media (min-width: 992px) {  
+@media (min-width: 992px) { 
+
+
     .member__description {
         display: flex;
         flex-direction: column;
