@@ -25,7 +25,7 @@
 }
 
 .products__carousel {
-  position: relative;
+	position: relative;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -42,6 +42,7 @@
 
   .products__carousel-container {
     display: flex;
+	min-width: 0;
     align-content: center;
     margin: 0;
     transition: transform 0.5s ease-in-out;
@@ -110,31 +111,6 @@
 .products__carousel--btn-prev:hover,
 .products__carousel--btn-next:hover {
   opacity: 1;
-}
-
- @media (max-width: 700px) {
-
-  .products__carouse {
-    position: relative;  
-    padding: 0 50px;
-  }
-  
-  .products__carousel-container {
-    padding: 0 35px;
-  }
-  
-  .products__carousel--btn-prev,
-  .products__carousel--btn-next {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-  }
-
-  .products__carousel--btn-next {
-    left: auto;
-    right: 10px;
-  }
-  
 }
 
  @media (min-width: 980px) {
