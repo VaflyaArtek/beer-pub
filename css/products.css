@@ -113,7 +113,7 @@
   opacity: 1;
 }
 
- @media (min-width: 980px) {
+ @media (min-width: 767px) {
 
   .products__carousel--article-title {
     font-size: 3.6em;
