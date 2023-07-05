@@ -7,7 +7,7 @@ let slidesPerView = 1;
 let currentIndex = 0;
 
 function updateSlidesPerView() {
-  if (window.innerWidth >= 768) {
+  if (window.innerWidth >= 680) {
     slidesPerView = 2;
   } else {
     slidesPerView = 1;
