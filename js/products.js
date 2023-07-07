@@ -42,14 +42,13 @@ function changeLanguage() {
   subtitle.innerText = selectedLanguage.subtitle;
   description.innerText = selectedLanguage.description;
   
-  if (languagesKeys[randomIndex] === 'ukrainian' && window.innerWidth < 992) {
+  if (languagesKeys[randomIndex] === 'ukrainian' && window.innerWidth <= 992 && window.innerWidth > 768) {
     subtitle.style.fontSize = '2.2em';
     subtitle.style.lineHeight = '1.5em';
-  } else if (languagesKeys[randomIndex] === 'ukrainian' && window.innerWidth < 768) {
-    subtitle.style.fontSize = '2em';
-    subtitle.style.lineHeight = '1.5em';
-  }
-   else {
+  } else if (languagesKeys[randomIndex] === 'ukrainian' && window.innerWidth <= 768) {
+    subtitle.style.fontSize = '1.8em';
+    subtitle.style.lineHeight = '1.2em';
+  } else {
     subtitle.style.fontSize = selectedLanguage.fontSize;
     subtitle.style.lineHeight = selectedLanguage.lineHeight;
   }
@@ -58,7 +57,6 @@ function changeLanguage() {
 }
 
 changeLanguage();
-
 
 const products = [
     {
