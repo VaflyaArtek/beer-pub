@@ -1,8 +1,17 @@
-.top__choice {
-    display: block;
+.menu__line {
+    display: inline-block;
+    width: 100%;
+    background-image: url(../images/background_menu-image.png);
+    background-size: cover;
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    padding: 40px 0 20px;
+    text-align: center;
+
 }
 
-.title__topChoice {
+.title__bar,
+.title__food {
     color: var(--ui-brand-color);
     font-family: 'Shadows Into Light';
     font-size: 21px;
@@ -11,43 +20,51 @@
 
 }
 
-.top__choice h2 {
+.menu__bar h2,
+.menu__food h2 {
     font-family: 'Teko', 'Sans-serif';
     font-size: 51px;
+    text-transform: uppercase;
     color: var(--ui-main-text-color-light);
     text-align: center;
+    opacity: 1;
 }
 
-.top__choice h4 {
+.menu__bar h4,
+.menu__food h4 {
     font-family: 'Open Sans', 'sans-serif';
     font-size: 19px;
     color: var(--ui-block-description-color);
     text-align: center;
-    margin: 30px 15px 30px 25px;
+    margin: 30px;
     line-height: 1.6;
 }
 
-.choice__image {
+.bar__carousel,
+.food__carousel {
+    margin: 20px;
+    padding: 24px;
+}
+.carousel__slide-container span{
+    text-transform: uppercase;
+    color: var(--ui-brand-color);
+    font-family: 'Teko', sans-serif;
     display: flex;
-    flex-wrap: wrap;
-    flex-basis: auto;
-    justify-content: center;
-    align-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    text-decoration: none;
+    font-size: 26px;
+    min-width: max-content;
+    line-height: normal;
     margin-bottom: 20px;
+
 }
 
-.sort__img {
-    overflow: hidden;
-    margin-top: 10px;
-    margin-left: 10px;
-}
+.menu__food-image {
 
-.sort__img img {
-    width: 120px;
-    height: 120px;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    justify-content: center;
+
 }
 
 .best__dish {
@@ -57,12 +74,15 @@
     margin-right: 20px; */
 }
 
+.bar__name,
 .dish__name {
     color: var(--ui-main-text-color-light);
     font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
     display: flex;
     text-decoration: none;
     font-size: 26px;
+    
     min-width: max-content;
     line-height: normal;
 }
@@ -83,32 +103,21 @@
 
 }
 
-.dish__about {
+.bar__about,
+.food__about {
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     color: var(--ui-text-color);
+    margin-bottom: 1.6rem;
 }
 
+.bar__price,
 .dish__price {
     color: var(--ui-brand-color);
     font-family: 'Teko', sans-serif;
     display: flex;
     font-size: 26px;
 }
-
-.menu__link {
-    display: block;
-    max-width: fit-content;
-    padding: 18px 26px;
-
-    background-color: var(--ui-brand-color);
-    color: var(--ui-block-title-color);
-}
-
-a.menu__link {
-    margin: 30px auto 50px auto;
-}
-
 
 @media (min-width: 500px) {
     .sort__img img {

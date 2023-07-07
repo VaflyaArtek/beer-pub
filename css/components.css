@@ -23,7 +23,23 @@
   text-align: center;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
+	 
+	.title {
+		font-size: 1.31em;
+		line-height: 1.05em;
+		padding-bottom: 26px;
+	}
+
+	.subtitle {
+		font-size: 3.1em;
+		line-height: 1.05em;
+		padding-bottom: 28px;
+	}
+	
+}
+
+@media (min-width: 992px) {
 	 
 	.title {
 		font-size: 1.9em;

@@ -1,4 +1,24 @@
 const API_URL = 'https://api.punkapi.com/v2/beers/random';
+const beerRecommendationSection = document.querySelector('.beer-recommendation');
+const arrowButton = document.getElementById('arrow__botton');
+const ourStorySection = document.querySelector('.our-story');
+
+arrowButton.addEventListener('click', () => {
+    if (beerRecommendationSection.style.display === 'flex') {
+        beerRecommendationSection.style.animation = 'slideOut 0.5s forwards';
+        setTimeout(() => {
+            beerRecommendationSection.style.display = 'none';
+            beerRecommendationSection.style.animation = 'none';
+            document.getElementById('botton-text').textContent = 'more about beer';
+            document.getElementById('arrow__botton-up').style.transform = 'rotate(-90deg)';
+        }, 500);
+    } else {
+        beerRecommendationSection.style.display = 'flex';
+        beerRecommendationSection.style.animation = 'slideIn 0.5s forwards';
+        document.getElementById('botton-text').textContent = 'hide';
+        document.getElementById('arrow__botton-up').style.transform = 'rotate(90deg)';
+    }
+});
 
 async function fetchRandomBeer() {
     try {
@@ -6,23 +26,20 @@ async function fetchRandomBeer() {
         const data = await response.json();
         const beer = data[0];
 
-        const beerName = beer.name;
-        const beerDescription = beer.description;
-        const beerTagline = beer.tagline;
-        const beerImage = beer.image_url;
+        const { name: beerName, description: beerDescription, tagline: beerTagline, image_url: beerImage } = beer;
 
         const beerBlockContent = createBeerBlockContent(beerName, beerDescription, beerTagline);
-        const beerBlockContainer = document.querySelector('.beer-recommendation');
+        const beerBlockContainer = document.querySelector('.beer-recommendation__post');
         beerBlockContainer.innerHTML = '';
         beerBlockContainer.appendChild(beerBlockContent);
 
-        const beerRecommendationImg = document.querySelector('.beer-recommendation-img');
+        const beerRecommendationImg = document.querySelector('.beer-recommendation__img-container');
         beerRecommendationImg.style.backgroundImage = `url(${beerImage === 'https://images.punkapi.com/v2/keg.png' ? 'images/craft-beer-ipa.png' : beerImage || 'images/craft-beer-ipa.png'})`;
 
         const nextBeerButton = document.getElementById('next-beer-button');
-        nextBeerButton.addEventListener('click', (event) => {
+        nextBeerButton.addEventListener('click', async (event) => {
             event.preventDefault();
-            fetchRandomBeer();
+            await fetchRandomBeer();
         });
     } catch (error) {
         console.log(error);

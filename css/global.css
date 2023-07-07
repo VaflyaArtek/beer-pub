@@ -91,3 +91,9 @@ img {
   text-align: center;
   color: var(--ui-brand-color);
 }
+
+p,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
