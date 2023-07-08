@@ -8,7 +8,7 @@ let currentSlideIndex3 = 0;
 
 const slideData = [
   {
-    endDate: new Date('July 5, 2023'),
+    endDate: new Date('July 12, 2023'),
     imageSrc: 'images/three-people-drink-beer.jpg',
     description: 'this Wednesday',
     title: 'BAVARIAN BEER DAY',

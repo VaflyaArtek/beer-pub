@@ -45,6 +45,7 @@
     display: block;
     width: 24px;
     height: 24px;
+    animation: pulse-banner 1.5s infinite;
   }
   
   .event__countdown-container {
@@ -166,10 +167,21 @@
     font-weight: bold;
   }
 
-  
   .blog__bottom {
     margin-bottom: 50px;
   }
+
+  @keyframes pulse-banner {
+    0% {
+       opacity: 1;
+    }
+    50% {
+       opacity: 0.5;
+    }
+    100% {
+       opacity: 1;
+    }
+ }
 
 @media (min-width: 768px) {
   .event__text {

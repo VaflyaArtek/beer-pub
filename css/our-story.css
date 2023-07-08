@@ -64,16 +64,99 @@
   max-height: 640px;
 }
 
-.our-story-position {
-  max-height: 500px;
+.beer-recommendation {
+  display: none;
+  flex-wrap: wrap;
+  max-height: 840px;
+  animation: slideIn 1s forwards;
+  position: relative;
+  z-index: 1;
 }
 
-.beer-recommendation-img {
+.beer-recommendation__post {
+  background-color: var(--testimonials-cards-color);
+}
+
+.beer-recommendation__post .our-story__post {
+  padding: 90px 30px 40px 30px;
+}
+
+.beer-recommendation__img-container {
   flex: 0 0 50%;
+  border-left: solid;
+  border-color: var(--ui-brand-color);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: var(--testimonials-cards-color);
+}
+
+.our-story__arrow__botton-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-story__arrow__botton-up p {
+  margin: 0;
+}
+
+#botton-text {
+  padding-top: 20px;
+}
+
+#arrow__botton {
+  padding: 10px 70px 50px 70px;
+  height: 40px;
+}
+
+#arrow__botton-up {
+  transform: rotate(-90deg);
+  animation: pulse 1.5s infinite;
+}
+
+.hidden {
+  display: none;
+  animation: slideOut 1s forwards;
+  position: relative;
+  z-index: 0;
+}
+
+@keyframes slideIn {
+   0% {
+      transform: translateY(-100%);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}
+
+@keyframes slideOut {
+   0% {
+      transform: translateY(0);
+   }
+   100% {
+      transform: translateY(-100%);
+   }
+}
+
+@keyframes pulse {
+   0% {
+    width: 25px;
+    height: 25px;
+      opacity: 1;
+   }
+   50% {
+    width: 20px;
+    height: 20px;
+      opacity: 0.5;
+   }
+   100% {
+    width: 25px;
+    height: 25px;
+      opacity: 1;
+   }
 }
 
 @media (min-width: 768px) {
@@ -81,6 +164,8 @@
     display: flex;
     flex-wrap: wrap;
     max-height: 840px;
+    position: relative;
+    z-index: 2;
   }
 
   .our-story__post-container {
@@ -112,6 +197,17 @@
   .our-story__title {
     font-size: 51px;
     line-height: 51px;
+  }
+
+  .beer-recommendation__post {
+    flex: 0 0 50%;
+    max-width: 50%;
+    border-right: solid;
+    border-color: var(--ui-brand-color);
+  }
+
+  .beer-recommendation__post .our-story__post {
+    padding: 0;
   }
 }
 
