@@ -62,7 +62,7 @@
     width: 100%;
     height: 100%;
     padding: 5px;
-   
+
 }
 
 .container.best__dish {
@@ -186,11 +186,12 @@ a.menu__link {
         padding-right: 30px;
 
     }
+
     .sort__img img {
         width: 100%;
         height: 100%;
         padding: 5px;
-       
+
     }
 }
 
@@ -206,6 +207,7 @@ a.menu__link {
         margin-right: 110px;
 
     }
+
     .container.best__dish {
         max-width: 100%;
         padding-left: 130px;

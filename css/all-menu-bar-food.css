@@ -46,7 +46,8 @@
     padding: 24px;
 }
 
-.carousel__slide-container span {
+.carousel__slide-container span,
+.menu__slide-container span {
     text-transform: uppercase;
     color: var(--ui-brand-color);
     font-family: 'Teko', sans-serif;
@@ -74,7 +75,6 @@
     display: flex;
     text-decoration: none;
     font-size: 26px;
-
     min-width: max-content;
     line-height: normal;
 }
@@ -112,13 +112,11 @@
 }
 
 .food__carousel {
-
     position: relative;
 }
 
 @media (min-width: 500px) {
     .menu__food-image {
-
         padding-left: 40px;
         padding-right: 40px;
 
@@ -127,19 +125,18 @@
 
 @media (min-width: 1000px) {
     .menu__food-image {
-
         padding-left: 80px;
         padding-right: 80px;
 
     }
 
-    .bar__carousel.carousel {
+    .bar__carousel {
         padding-left: 80px;
         padding-right: 80px;
 
     }
 
-    .food__carousel.carousel {
+    .food__carousel {
         padding-left: 80px;
         padding-right: 80px;
     }
@@ -147,19 +144,15 @@
 
 @media (min-width: 1200px) {
     .menu__food-image {
-
         padding-left: 120px;
         padding-right: 120px;
-
     }
-
 }
 
-.bar__carousel {
+.bar__carousel,
+.food__carousel {
     border: 2px solid var(--ui-brand-color);
     max-width: 100%;
-    
-
 }
 
 .carousel__item {
@@ -169,11 +162,14 @@
     position: relative;
 }
 
-.carousel__slide-container {
-    display: flex;    
+.carousel__slide-container,
+.menu__slide-container {
+    display: flex;
     overflow: hidden;
-    /* border: 2px solid var(--ui-brand-color); */
-    max-width: 90%;
-    margin: 10px;
-   
+    max-width: 100%;
+    border:2px solid var(--ui-brand-color);
+
+}
+.sort__item{    
+    margin-right: 10px;
 }
