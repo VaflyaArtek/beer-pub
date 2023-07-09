@@ -1,4 +1,3 @@
-
 const barItem = document.querySelectorAll('.carousel__slide-container .carousel__item .sort__item');
 const carouselItem = document.querySelectorAll('.carousel__item');
 const itemSort = document.querySelector('.sort__item');
@@ -9,16 +8,25 @@ function init() {
     console.log('resize');
     width = document.querySelector('.carousel__slide-container').offsetWidth;
 
-    carouselItem.forEach(item => {
-        item.style.width = width * barItem.length + 'px';
-    });
+    if (window.innerWidth < 720) {
+        barItem.forEach(item => {
+            item.style.width = width + 'px';
+            item.style.height = 'auto';
+        });
 
-    barItem.forEach(item => {
-        item.style.width = width/2 + 'px';
-        item.style.height = 'auto';
-    });
+        rollCarouselFull();
+    } else {
+        barItem.forEach(item => {
+            item.style.width = width / 2 + 'px';
+            item.style.height = 'auto';
+        });
 
-    rollCarousel();
+        carouselItem.forEach(item => {
+            item.style.width = width * barItem.length + 'px';
+        });
+
+        rollCarousel();
+    }
 
     console.log(width);
 }
@@ -29,23 +37,39 @@ init();
 document.querySelector('.bar__btn-prev').addEventListener('click', function () {
     count--;
     if (count < 0) {
-        count = barItem.length - 1;
+        count = carouselItem.length - 1;
     }
 
-    rollCarousel();
+    if (window.innerWidth < 720) {
+        rollCarouselFull();
+    } else {
+        rollCarousel();
+    }
 });
 
 document.querySelector('.bar__btn-next').addEventListener('click', function () {
     count++;
-    if (count >= barItem.length) {
+    if (count >= carouselItem.length) {
         count = 0;
     }
+    
 
-    rollCarousel();
+    if (window.innerWidth < 720) {
+        rollCarouselFull();
+    } else {
+        rollCarousel();
+    }
 });
 
 function rollCarousel() {
     carouselItem.forEach(item => {
-        item.style.transform = 'translateX(-' + count * width/2 + 'px)';
+        item.style.transform = 'translateX(-' + count * width / 2 + 'px)';
     });
 }
+
+function rollCarouselFull() {
+    carouselItem.forEach(item => {
+        item.style.transform = 'translateX(-' + count * width + 'px)';
+    });
+}
+

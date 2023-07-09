@@ -43,7 +43,7 @@
 .bar__carousel,
 .food__carousel {
     margin: 20px;
-    padding: 24px;
+    /* padding: 14px; */
 }
 
 .carousel__slide-container span,
@@ -81,8 +81,10 @@
 
 .container__line {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     height: fit-content;
+    width: 90%;
+
 }
 
 .underline {
@@ -101,6 +103,7 @@
     font-size: 17px;
     color: var(--ui-text-color);
     margin-bottom: 1.6rem;
+    width: 90%;
 }
 
 .bar__price,
@@ -160,6 +163,8 @@
     transition: all ease 1s;
     flex-direction: column;
     position: relative;
+    margin: 10px;
+  
 }
 
 .carousel__slide-container,
@@ -167,9 +172,10 @@
     display: flex;
     overflow: hidden;
     max-width: 100%;
-    border:2px solid var(--ui-brand-color);
+    /* border:2px solid var(--ui-brand-color); */
 
 }
 .sort__item{    
     margin-right: 10px;
+    
 }
