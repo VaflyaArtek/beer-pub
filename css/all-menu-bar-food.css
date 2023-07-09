@@ -45,7 +45,8 @@
     margin: 20px;
     padding: 24px;
 }
-.carousel__slide-container span{
+
+.carousel__slide-container span {
     text-transform: uppercase;
     color: var(--ui-brand-color);
     font-family: 'Teko', sans-serif;
@@ -59,30 +60,21 @@
 }
 
 .menu__food-image {
-
-    margin-left: 20px;
-    margin-right: 40px;
     margin-bottom: 20px;
-    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
 
-}
-
-.best__dish {
-    display: flex;
-    flex-direction: column;
-    /* margin-left: 20px;
-    margin-right: 20px; */
 }
 
 .bar__name,
-.dish__name {
+.food__name {
     color: var(--ui-main-text-color-light);
     font-family: 'Teko', sans-serif;
     text-transform: uppercase;
     display: flex;
     text-decoration: none;
     font-size: 26px;
-    
+
     min-width: max-content;
     line-height: normal;
 }
@@ -112,25 +104,76 @@
 }
 
 .bar__price,
-.dish__price {
+.food__price {
     color: var(--ui-brand-color);
     font-family: 'Teko', sans-serif;
     display: flex;
     font-size: 26px;
 }
 
+.food__carousel {
+
+    position: relative;
+}
+
 @media (min-width: 500px) {
-    .sort__img img {
-        width: 230px;
-        height: 230px;
-        margin: 5px;
+    .menu__food-image {
+
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+}
+
+@media (min-width: 1000px) {
+    .menu__food-image {
+
+        padding-left: 80px;
+        padding-right: 80px;
+
+    }
+
+    .bar__carousel.carousel {
+        padding-left: 80px;
+        padding-right: 80px;
+
+    }
+
+    .food__carousel.carousel {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu__food-image {
+
+        padding-left: 120px;
+        padding-right: 120px;
+
     }
 
 }
 
-@media (min-width: 700px) {
-    .sort__img img {
-        width: 250px;
-        height: 250px;
-    }
+.bar__carousel {
+    border: 2px solid var(--ui-brand-color);
+    max-width: 100%;
+    
+
+}
+
+.carousel__item {
+    display: flex;
+    transition: all ease 1s;
+    flex-direction: column;
+    position: relative;
+}
+
+.carousel__slide-container {
+    display: flex;    
+    overflow: hidden;
+    /* border: 2px solid var(--ui-brand-color); */
+    max-width: 90%;
+    margin: 10px;
+   
 }
