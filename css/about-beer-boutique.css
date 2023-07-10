@@ -68,7 +68,7 @@
     font-size: 17px;
     font-family: 'Open Sans', sans-serif;
 }
-@media (min-width: 768px){
+@media (min-width: 500px){
     .about-beer-boutique__main{
         display: grid;
         grid-template-columns: 1fr auto;
@@ -78,6 +78,7 @@
     }
     .about-beer-boutique__image{
         grid-row: 1/2;
+        grid-column: 1/-1;
         width: 100% !important;
         height: auto;
     }
@@ -86,3 +87,16 @@
         margin-top: 50px;
     }
 }
+@media (min-width: 768px){
+    .about-beer-boutique__container{
+        display: flex;
+    }
+    .about-beer-boutique__image{
+        flex: 1;
+        
+    }
+    .about-beer-boutique__text__container{
+        flex: 2;
+        margin-left: 30px;
+    }
+    }
