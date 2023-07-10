@@ -4,20 +4,32 @@
     margin-left: 10%;
 }
 
-.apps svg {
+.app svg {
     width: 32px;
     margin: 10px;
 }
-  
-  .icon:hover path {
-    fill: var(--ui-light-accent-color);
-    background-color: ye;
-  }
 
-  /*.app:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }*/
-  
+.svgIcon_1J7 .logo_2gS {
+    fill: currentColor;
+    color: var(--ui-brand-color);
+}
+
+.svgIcon_1J7 .outer_bDW {
+    fill: currentColor;
+    color: var(--beer-boutique__main-black-color);
+}
+
+.app:hover {
+    box-shadow: 0 2px 4px var(--ui-light-accent-color);
+
+    .svgIcon_1J7 .logo_2gS {
+        color: var(--beer-boutique__main-black-color);
+    }
+
+    .svgIcon_1J7 .outer_bDW {
+        color: var(--ui-brand-color);
+    }
+}
 
 .nav-link {
     color: var(--beer-boutique__header-color);
@@ -27,15 +39,16 @@
     text-decoration: solid;
     word-spacing: normal;
     text-decoration: none;
-  transition: text-decoration 5s;
+    transition: text-decoration 5s;
 }
 
 .nav-link:hover {
     color: var(--ui-main-text-color-light);
     text-decoration: underline;
+    font-size: 19px;
+    text-shadow: 0 1px 1px var(--ui-light-accent-color);
 }
 
-  
 .header__container {
     display: flex;
     flex-direction: row;
@@ -75,11 +88,6 @@
         --bs-bg-opacity: 0;
     }
 
-    /*.apps {
-        display: grid;
-        grid-template-columns: 1fr, 1fr;
-    }*/
-
     .nav-container,
     .app-container {
         padding: auto;
@@ -90,16 +98,29 @@
 }
 
 @media (min-width: 1440px) {
-  .item {
-    margin-right: 30px;
-  }
+
+    .item {
+        margin-right: 30px;
+    }
+
+    .navbar {
+        padding: 0;
+        margin: 0 120px;
+    }
+
 }
 
 @media (min-width: 2200px) {
+
     .item {
-      margin-right: 100px;
+        margin-right: 100px;
     }
-  }
+
+    .navbar {
+        margin: 0 500px;
+    }
+
+}
 
 .nav-container {
     display: flex;
