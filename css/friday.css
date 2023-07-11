@@ -21,6 +21,7 @@
 .friday-deal__fon{
   background-image: url("/images/friday-fon.png");
   padding-bottom: 130px;
+  padding-top: 60px;
 }
 .friday-deal__banner {
   background-image: url("/images/frdiay-banner.jpg");
