@@ -1,28 +1,70 @@
 .partners__container {
-    background-color: var(--ui-brand-color); 
-}
-.carousel-slide {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex: 6;
-    max-height: 172px;
-    width: 100%;
-    padding: 30px 40px 30px 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--ui-brand-color); 
+    height: 210px;
 }
-.carousel__btn-prev {
-    width: 24px;
-    height: 24px;
+.partners__carousel-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
 }
-.carousel__btn-next {
-    width: 24px;
-    height: 24px;
+.carousel-item {
+    background-color: var(--ui-background-color);
+    height: 150px;
+    width: 389px;
+}
+.carousel-img-bg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 89px;
+    width: 344px;
+    margin: 31px 27px;
 }
 .carousel-img {
-    height: 56px;
-    width: 97px;
-    background-color: var(--ui-link-hover-color-light);
-    padding: 20px 20px;
+    max-width: 100%;
+    max-height: 80px;
+    max-width: 312px;
+    margin: 0 30px;
+    background-color: var(--ui-background-color);
 }
 
+.partners__carousel__btn-prev {
+    transform: rotateY(180deg);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--ui-bg-dark-accent-btn-color);
+    fill: var(--ui-fill-btn-color);
+    cursor: pointer;
+}
+
+.partners__carousel__btn-next {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--ui-bg-dark-accent-btn-color);
+    fill: var(--ui-fill-btn-color);
+    cursor: pointer;
+}
+@media (min-width: 1200px) {
+    .partners__carousel__btn-prev {
+        width: 30px;
+        height: 30px;
+        background: none;
+        border: none;
+    }
+    .partners__carousel__btn-next {
+        width: 30px;
+        height: 30px;
+        background: none;
+        border: none;
+    }
+}
