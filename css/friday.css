@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300&family=Shadows+Into+Light&family=Teko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
-  font-family: "Teko", sans-serif;
+ 
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 30px;
   
 
 }
@@ -16,6 +15,8 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  font-family: "Teko", sans-serif;
+   font-size: 30px;
   
 }
 .friday-deal__fon{
