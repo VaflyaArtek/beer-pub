@@ -16,7 +16,7 @@
   padding-top: 60px;
 }
 .friday-deal__banner {
-  background-image: url("/images/frdiay-banner.jpg");
+  background-color: rgb(255,193,36);
   padding: 80px 80px 90px 80px;
   display: flex;
   flex-direction: column;
