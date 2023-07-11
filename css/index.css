@@ -1,11 +1,23 @@
-@import "music.css";
 @import "global.css";
+@import "components.css";
+@import "header.css";
+@import "beer-boutique.css";
 @import "menu-section.css";
 @import "what-we-offer.css";
-@import "carousel-products.css";
-@import "footer.css";
+@import "products.css";
 @import "about-beer-boutique.css";
-@import "partners-carousel.css"
+@import "blog.css";
+@import "event.css";
+@import "partners-carousel.css";
+@import "music.css";
+@import "footer.css";
+@import "about-hiring-and-boutique.css";
+@import "our-story.css";
+@import "testimonials.css";
+@import "contacts.css";
+@import "top-choice.css";
+@import "all-menu-bar-food.css";
+@import "our-team.css";
 
 
 

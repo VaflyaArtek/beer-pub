@@ -1,0 +1,245 @@
+.menu__line {
+    display: inline-block;
+    width: 100%;
+    background-image: url(../images/background_menu-image.png);
+    background-size: cover;
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    padding: 40px 0 20px;
+    text-align: center;
+
+}
+
+.title__bar,
+.title__food {
+    color: var(--ui-brand-color);
+    font-family: 'Shadows Into Light';
+    font-size: 21px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.menu__bar h2,
+.menu__food h2 {
+    font-family: 'Teko', 'Sans-serif';
+    font-size: 51px;
+    text-transform: uppercase;
+    color: var(--ui-main-text-color-light);
+    text-align: center;
+    opacity: 1;
+}
+
+.menu__bar h4,
+.menu__food h4 {
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 19px;
+    color: var(--ui-block-description-color);
+    text-align: center;
+    margin: 30px;
+    line-height: 1.6;
+}
+
+.bar__carousel,
+.food__carousel {
+    margin: 20px;
+
+}
+
+.carousel__slide-container span,
+.menu__slide-container span {
+    text-transform: uppercase;
+    color: var(--ui-brand-color);
+    font-family: 'Teko', sans-serif;
+    display: flex;
+    text-decoration: none;
+    font-size: 26px;
+    min-width: max-content;
+    line-height: normal;
+    margin-bottom: 20px;
+
+}
+
+.menu__food-image {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.bar__name,
+.food__name {
+    color: var(--ui-main-text-color-light);
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    text-decoration: none;
+    font-size: 26px;
+    min-width: max-content;
+    line-height: normal;
+}
+
+.container__line {
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    width: 90%;
+    margin-right: 0;
+
+}
+
+.underline {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--ui-text-color);
+    height: 20px;
+    flex-grow: initial;
+    margin: 7px auto;
+
+}
+
+.bar__about,
+.food__about {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: var(--ui-text-color);
+    margin-bottom: 1.6rem;
+    width: 90%;
+    margin-right: 0;
+}
+
+.bar__price,
+.food__price {
+    color: var(--ui-brand-color);
+    font-family: 'Teko', sans-serif;
+    display: flex;
+    font-size: 26px;
+}
+
+.food__carousel {
+    position: relative;
+}
+
+.bar__carousel,
+.food__carousel {
+    /* border: 2px solid var(--ui-brand-color); */
+    max-width: 100%;
+}
+
+.carousel__item,
+.menu-carousel__item {
+    display: flex;
+    transition: all ease 1s;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+
+}
+
+.carousel__slide-container,
+.menu__slide-container {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.sort__item {
+    margin-right: 10px;
+
+}
+
+.bar__carousel .bar__btn-prev,
+.bar__carousel .bar__btn-next {
+    position: absolute;
+    top: 725px;
+    width: 31px;
+    height: 51px;
+    background: none;
+}
+
+.bar__btn-next {
+    right: 10px;
+}
+
+
+.bar__btn-prev {
+    left: 10px;
+}
+
+.food__carousel .food__btn-prev,
+.food__carousel .food__btn-next {
+    position: absolute;
+    top: 225px;
+    width: 31px;
+    height: 51px;
+    background: none;
+}
+
+.food__btn-next {
+    right: 10px;
+}
+
+
+.food__btn-prev {
+    left: 10px;
+}
+
+@media (min-width: 500px) {
+    .menu__food-image {
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+
+    .bar__carousel,
+    .food__carousel {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .carousel__item {
+        margin-right: 15px;
+        margin-left: 15px;
+        padding-left: 12px;
+        max-width: 98%;
+    }
+
+    .container__line {
+        margin: 0;
+    }
+
+    .carousel__slide-container,
+    .menu__slide-container {
+        max-width: 95%;
+    }
+}
+
+@media (min-width:720px) {
+    .carousel__item {
+        margin-left: 10px;
+        padding: 0;
+        max-width: 95%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .menu__food-image {
+        padding-left: 80px;
+        padding-right: 80px;
+
+    }
+
+    .bar__carousel,
+    .food__carousel {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .menu__food-image {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}

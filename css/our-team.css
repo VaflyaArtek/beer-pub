@@ -1,0 +1,146 @@
+.our-team__description {
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 85.5%;
+}
+
+.our-team__suptitle {
+    color: var(--ui-brand-color);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.our-team__title {
+    color: var(--about-beer-boutique-heading-text-color);
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.our-team__text {
+    color: var(--beer-boutique__header-color);
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 19px;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 55px;
+}
+
+.our-team__members {
+    margin-bottom: 100px;
+}
+
+.member{
+    max-width: 85%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.member__name {
+    color: var(--about-beer-boutique-heading-text-color);
+    font-family: 'Teko', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    margin: 15px 0 16px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.member__position {
+    color: var(--ui-brand-color);
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.member__legend {
+    color: var(--ui-text-color);
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .our-team__suptitle {
+        font-size: 21px;
+    }
+
+    .our-team__title {
+        font-size: 51px;
+    }
+
+    .member {
+        height: 100%;
+    }
+
+    .member__name {
+        font-size: 32px;
+    }
+
+    .our-team__members {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .member-1 {
+        grid-column: 1 / 7;
+    }
+
+    .member-2 {
+        grid-column: 7 / 13;
+    }
+
+    .member-3 {
+        grid-column: 4 / 10;
+    }
+}
+
+@media (min-width: 992px) { 
+    .our-team__suptitle {
+        font-size: 28px;
+    }
+
+    .our-team__title {
+        font-size: 62px;
+    }
+
+    .member__name {
+        font-size: 38px;
+    }
+
+    .member__position {
+        font-size: 15px;
+    }
+
+
+    .our-team__members {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 66%; 
+        margin: auto;
+    }
+
+    .member-1 {
+        grid-column: 1 / 2;
+    }
+
+    .member-2 {
+        grid-column: 2 / 3;
+    }
+
+    .member-3 {
+        grid-column: 3 / 4;
+    }
+}

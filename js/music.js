@@ -1,39 +1,39 @@
-function playMusic(volume) {
-    var audio = document.getElementById("music__audio");
+const audio = document.getElementById("music__audio");
+const fallout = document.getElementById("fallout");
+const yesButton = document.getElementById("music__yes-btn");
+const noButton = document.getElementById("music__no-btn");
+const volumeSlider = document.getElementById("music__volume-slider");
+
+const playMusic = (volume) => {
+    if (!audio) return;
     audio.volume = volume;
     audio.play();
     hidefallout();
-    alert("Music on!");
 }
 
-function openPageWithoutMusic() {
+const openPageWithoutMusic = () => {
     hidefallout();
-    alert("Music off!");
 }
 
-function hidefallout() {
-    var fallout = document.getElementById("fallout");
+const hidefallout = () => {
+    if (!fallout) return;
     fallout.style.display = "none";
 }
 
-function setupEventListeners() {
-    var yesButton = document.getElementById("music__yes-btn");
-    var noButton = document.getElementById("music__no-btn");
-    var volumeSlider = document.getElementById("music__volume-slider");
-
+const setupEventListeners = () => {
     if (!yesButton || !noButton || !volumeSlider) {
         return false;
     }
 
-    yesButton.addEventListener("click", function() {
-        var volume = volumeSlider.value / 100;
+    yesButton.addEventListener("click", () => {
+        const volume = volumeSlider.value / 100;
         playMusic(volume);
     });
     noButton.addEventListener("click", openPageWithoutMusic);
     return true;
 }
 
-var intervalID = setInterval(function() {
+const intervalID = setInterval(() => {
     if (setupEventListeners()) {
         clearInterval(intervalID);
     }

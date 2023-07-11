@@ -7,9 +7,12 @@
 }
 
 :root {
+  --ui-background-img: url(../images/background-image.png);
+  --ui-contacts-title-background-img: url(../images/contacts-title-background.webp);
   --ui-brand-color: #ffc123;
   --ui-dark-accent-color: #444343;
   --ui-block-title-color: #111;
+  --ui-block-description-color: #cccccc;
   --ui-caption-color: #080505;
   --ui-light-accent-color: #fcfaf8;
   --ui-link-color: #1d1f23;
@@ -18,34 +21,84 @@
   --ui-background-color: rgba(17, 17, 17, 0.05);
   --ui-main-text-color-light: #fff;
   --ui-text-dark-color: #373737;
-  --ui-text-color: rgb(157,157,157);
+  --ui-text-color: rgb(157, 157, 157);
   --music-bckg: #212e3a;
   --music-text-color: #fff;
   --ui-bg-btn-color: #151212;
   --ui-fill-btn-color: #111111;
   --ui-bg-dark-accent-btn-color: #000;
   scroll-behavior: smooth;
+  --beer-boutique__enjoy: rgb(255, 255, 255);
+  --beer-boutique__header-color: rgb(204, 204, 204);
+  --beer-boutique__main-black-color: rgb(17, 17, 17);
+  --beer-boutique__subtitle: rgb(204, 204, 204);
+  --beer-boutique__reserve-table: rgb(17, 17, 17);
+  --about-beer-boutique-title-text-color: #111;
+  --about-beer-boutique-handwitten-text-color: #ffc123;
+  --about-beer-boutique-heading-text-color: #fff;
+  --about-beer-boutique-subheading-text-color: #d8d8d8;
+  --about-beer-boutique-main-text-color: #a6a6a6;
+  --contacts-form-background-input-color: rgba(255, 255, 255, 0.04);
+  --contacts-form-button-input-color: #111111;
+  --contacts-form-placeholder-color: rgb(117 117 117);
+  --scrollbar-track: #00000057;
+  --scrollbar-thumb: #00000081;
+  --content-bg-accent: #000000be;
+  --content-bg: #00000000;
+  --testimonials-cards-color: rgba(9, 6, 6, 1);
+  --main-color: #9d9d9d;
+  --main-font: 'Open Sans', sans-serif;
+  --main-title-color: #ffc123;
+  --main-title-font: 'Shadows Into Light', cursive;
+  --main-subtitle-color: #fcfaf8;
+  --main-heading-font: 'Teko', sans-serif;
+  --main-heading-color: #fff;
+  --main-description-color: #ccc;
+  --main-details-color: #fff;
+  --main-background-color: #111;
+  --arrow-background: #020200;
+  font-family: var(--main-font);
 }
-/*
- Non-need tag
+
+.container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 body {
-  padding: 0 15px;
-  background-color: #4e4949;
+  background-color: var(--main-background-color);
+  background-image: var(--ui-background-img);
+  background-repeat: repeat;
+  overflow-x: hidden;
 }
-*/
+
 ul {
   list-style-type: none;
 }
+
 a {
-  text-decoration:none;
+  text-decoration: none;
 }
-.container {
-  max-width: 1200px;
-  margin: auto;
+
+img {
+  width: 100%;
+  display: block;
 }
+
 .title-section {
   font-family: 'Shadows Into Light', cursive;
   font-size: 21px;
   text-align: center;
   color: var(--ui-brand-color);
+}
+
+p,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
 }

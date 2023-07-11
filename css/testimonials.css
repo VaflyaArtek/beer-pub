@@ -1,0 +1,218 @@
+.testimonials {
+    background-repeat: repeat;
+    min-width: 320px;
+}
+
+.testimonials__description {
+    padding-top: 155px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 85.5%;
+}
+
+.testimonial__suptitle {
+    color: var(--ui-brand-color);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.testimonial__title {
+    color: var(--about-beer-boutique-heading-text-color);
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.testimonial__text {
+    color: var(--beer-boutique__header-color);
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 19px;
+    text-align: center;
+    /* margin: 0 20.5px 0 20.5px; */
+    margin-bottom: 55px;
+}
+
+.card {
+    background-color: var(--testimonials-cards-color);
+    max-width: 85.5%;
+    margin: auto;
+    margin-bottom: 55px;
+    
+}
+
+.picture__element {
+    margin: 30px auto 10px;
+}
+
+.card__picture {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.comment__name {
+    color: var(--about-beer-boutique-heading-text-color);
+    font-family: 'Teko', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.comment__text {
+    color: var(--ui-text-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    padding: 0 30px 20px 30px;
+}
+
+.comment__date {
+    color: var(--ui-brand-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+
+.testimonials__container {
+    padding-top: 80px;
+    min-width: 272px; 
+    margin: auto;
+    max-width: 85.3%;
+
+}
+
+.testimonials__video{
+    background-image: url(https://res2.weblium.site/res/6234756258d0bb00237f54b3/623dc90a1f0e1c00225da202_optimized_1396.webp);
+    height: 432px; 
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-button {
+    width: 70px;
+    height: 70px;
+    background-color: var(--ui-brand-color);
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+  }
+  
+  .triangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid var(--ui-block-title-color);
+    
+  }
+
+
+
+@media (min-width: 768px) {
+    .testimonial__suptitle {
+         font-size: 21px;
+    }
+
+    .testimonial__title {
+        font-size: 51px;
+    }
+
+    .testimonials__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 92%; 
+        margin: auto;
+
+    }
+
+    .card {
+        margin: 0 15px 0 15px;
+        
+    }
+    
+    .card__picture {
+        width: 120px;
+    }
+
+    .comment__name {
+        font-size: 32px;
+    }
+
+    .testimonials__container {
+        max-width: 87.1%;
+    }
+    .testimonials__video {
+        height: 658px;  
+    }
+
+    .player-button {
+        width: 100px;
+        height: 100px;
+    }
+    .triangle {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 20px solid var(--ui-block-title-color);
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonial__suptitle {
+        font-size: 28px;
+   }
+
+   .testimonial__title {
+        font-size: 62px;
+   }
+
+   .comment__name {
+        font-size: 38px;
+   }
+   
+   .comment__date {
+        font-size: 15px;
+   }
+   .testimonials__container {
+    max-width: 89%;
+}
+}
+
+@media (min-width: 1024px) {
+    .testimonials__video {
+        height: 670px;  
+    }
+}
+
+@media (min-width: 1300px) {
+    .testimonials__cards {
+        max-width: 65%;
+    }
+
+    .card {
+        height: 447px;
+    }
+    .testimonials__container {
+        max-width: 63.3%;
+    }
+
+}

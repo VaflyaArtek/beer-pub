@@ -22,8 +22,9 @@
     justify-content: center;
     align-items: center;
 }
+
 .footer__container-logo {
-    width: 176px; 
+    width: 176px;
     height: auto;
 }
 .footer__container svg {
@@ -42,6 +43,7 @@
     line-height: 22.4px;
     color: var(--ui-text-color);
 }
+
 .footer__title {
     font-family: 'Teko', sans-serif;
     font-weight: 400;
@@ -57,6 +59,7 @@
     align-items: flex-start;
     margin-top: 30px;
 }
+
 .footer__container-social-icons-item {
     list-style: none;
     display: inline-block;
@@ -115,6 +118,7 @@
     color: var(--ui-text-color);
     
 }
+
 .footer__nav-menu-item {
     align-items: center;
     font-family: 'Open Sans', sans-serif;
@@ -124,13 +128,15 @@
     margin: 10px 5px;
     padding: 5px 5px;
 }
+
 .footer__subscribe {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     text-align: center;
 }
-.footer__subscribe-input{
+
+.footer__subscribe-input {
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -188,6 +194,7 @@
     border: 0;
     cursor: pointer;
 }
+
 .footer__copyright {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -196,9 +203,10 @@
     margin: 20px 0 0 0;
     padding: 0 0 15px 0;
 }
+
 .footer__line {
     color: var(--ui-text-color);
-    height: 0,5px; 
+    height: 0, 5px;
     margin: 0 30px;
 }
 
@@ -225,12 +233,14 @@
         font-size: 38px;
         line-height: 41.8px;
     }
+
     .footer__contacts {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
     }
+
     .footer__nav {
         display: flex;
         justify-content: flex-start;
@@ -247,6 +257,7 @@
     .footer__nav-menu-item {
         font-size: 15px;
     }
+
     .footer__subscribe {
         flex-direction: column;
         align-items: flex-start;
@@ -255,6 +266,7 @@
     .footer__subscribe-input {
         text-align: start;
     }
+
     .footer__copyright {
         display: flex;
         flex-direction: row;
@@ -262,6 +274,7 @@
         margin: 0 30px;
         padding: 15px 0;
     }
+
     .footer__copyright_text {
         margin: 0;
     }
