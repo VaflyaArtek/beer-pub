@@ -7,4 +7,5 @@ document.addEventListener("partialsLoaded", () => {
     import('./our-story.js');
     import('./music.js');
     import('./menu-carousel.js');
+    import('./partners-carousel.js');
  });
