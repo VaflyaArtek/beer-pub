@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300&family=Shadows+Into+Light&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  font-family: "Teko", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  
+
+}
+
+.friday-deal__container,
+.friday-deal__relux-container {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  
+}
+.friday-deal__fon{
+  background-image: url("/images/friday-fon.png");
+  padding-bottom: 130px;
+}
+.friday-deal__banner {
+  background-image: url("/images/frdiay-banner.jpg");
+  padding: 80px 80px 90px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.friday-deal__banner-sale {
+  font-family: "Shadows Into Light", cursive;
+  color: rgb(68, 67, 67);
+  font-size: 28px;
+}
+.friday-deal__banner-title{
+    margin-top: 20px;
+    color: rgb(17, 17, 17);
+    line-height: 128px;
+    font-size: 115px;
+}
+.friday-deal__banner-text{
+    font-size: 19px;
+    color: rgb(68, 67, 67);
+    font-family: 'Open Sans', sans-serif;
+}
+.friday-deal__banner-button{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 21px 40px 21px 40px;
+    margin: 10px;
+    margin-top: 40px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgb(17, 17, 17);
+}
+.friday-deal__banner-button:hover{
+    background-color: #444343;
+    transition: all 0.3s;
+}
+.friday-deal__relux-container {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.friday-deal__relux-logo{
+  max-height: 570px;
+  max-width: 595px;
+  object-fit: contain;
+}
+.friday-deal__relux-list-img{
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: 7.5px;
+}
+.friday-deal__relux-special{
+  padding: 45px 50px 45px 50px;
+  background: rgba(17, 17, 17, 0.76);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.friday-deal__relux-sale{
+  font-size: 28px;
+  font-family: 'Shadows Into Light', cursive;
+  color: rgb(255, 193, 35);
+  
+}
+.friday-deal__relux-title{
+  color: #fff;
+  font-size: 62px;
+}
+.friday-deal__relux-list{
+  margin-top: 25px;
+}
+.friday-deal__relux-list-item{
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  display: flex;
+}
+.friday-deal__relux-list-info{
+  margin: 7.5px;
+}
+.friday-deal__relux-list-info-top{
+  display: flex;
+}
+.friday-deal__relux-name{
+  font-size: 38px;
+  color: #fff;
+}
+.friday-deal__relux-line{
+  width: 100%;
+    height: 1px;
+    min-width: 10px;
+    margin: 7px 0;
+    flex: 1 1;
+    background: #111; 
+    background: #fff; 
+    opacity: .2;
+   
+    margin: 43px 5px 0 5px;
+}
+.friday-deal__relux-price{
+  font-size: 38px;
+  color: rgb(255, 193, 35);
+}
+.friday-deal__relux-text{
+  color: rgb(209, 209, 209);
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  align-items: flex-start;
+}
+.friday-deal__relux{
+  background-image: url("../images/friday-backround.png");
+  
+background-repeat: no-repeat;
+background-attachment: fixed;
+  transition-duration: 0.3s;
+  background-color: rgba(0,0,0,0.7);
+}
+.friday-deal__relux-logo {
+  background-image:url("../images/download.svg") ;
+  height: 575px;
+  width: 700px;
+  background-repeat: no-repeat;
+  object-fit: cover;	
+  background-size: contain;
+
+}
+@media (max-width:1080px) {
+  .friday-deal__relux-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .friday-deal__relux-special{
+    margin-top: 80px;
+  }
+  .friday-deal__relux-logo {
+    width: 468px;
+  }
+}
+@media (max-width:660px){
+  .friday-deal__banner-sale{
+    font-size: 14px;
+  }
+  .friday-deal__banner-title{
+    font-size: 62px;
+    margin-top: 0;
+  }
+  .friday-deal__banner-text{
+    font-size: 19px;
+  }
+  .friday-deal__banner{
+    padding: 51px 47px 51px 47px;
+  }
+
+
+  
+}
+@media (max-width:480px){
+  .friday-deal__relux-logo{
+  width: 320px;
+  height: 390px;
+  }
+  .friday-deal__relux-special{
+    margin-top: 0;
+    padding: 45px 50px 45px 50px;
+  }
+  .friday-deal__banner-title{
+    line-height: 66px;
+  }
+
+}
+@media (max-width:480px){
+
+  .friday-deal__relux-special{
+    margin-top: 0;
+    padding: 25px 20px 25px 20px;
+  }
+
+}
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Teko', sans-serif; */   
