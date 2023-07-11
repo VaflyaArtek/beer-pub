@@ -43,7 +43,7 @@
 .bar__carousel,
 .food__carousel {
     margin: 20px;
-   
+
 }
 
 .carousel__slide-container span,
@@ -119,6 +119,7 @@
 .food__carousel {
     position: relative;
 }
+
 .bar__carousel,
 .food__carousel {
     /* border: 2px solid var(--ui-brand-color); */
@@ -164,6 +165,7 @@
 .bar__btn-prev {
     left: 10px;
 }
+
 .food__carousel .food__btn-prev,
 .food__carousel .food__btn-next {
     position: absolute;
@@ -188,29 +190,35 @@
         padding-right: 40px;
 
     }
-    .bar__carousel, .food__carousel{
+
+    .bar__carousel,
+    .food__carousel {
         margin-right: 5px;
         margin-left: 5px;
     }
-    .carousel__item{
+
+    .carousel__item {
         margin-right: 15px;
         margin-left: 15px;
         padding-left: 12px;
-       max-width: 98%;
+        max-width: 98%;
     }
-    .container__line{
+
+    .container__line {
         margin: 0;
     }
-    .carousel__slide-container, .menu__slide-container{
+
+    .carousel__slide-container,
+    .menu__slide-container {
         max-width: 95%;
     }
 }
-@media (min-width:720px){
-    .carousel__item{
+
+@media (min-width:720px) {
+    .carousel__item {
         margin-left: 10px;
         padding: 0;
         max-width: 95%;
-        
     }
 }
 
@@ -221,10 +229,10 @@
 
     }
 
-    .bar__carousel, .food__carousel {
+    .bar__carousel,
+    .food__carousel {
         padding-left: 80px;
         padding-right: 80px;
-
     }
 
 }
