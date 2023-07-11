@@ -1,4 +1,4 @@
-const barItem = document.querySelectorAll('.carousel__slide-container .carousel__item .sort__item');
+const barItem = document.querySelectorAll('.bar__carousel .carousel__slide-container .carousel__item .sort__item');
 const carouselItem = document.querySelectorAll('.carousel__item');
 const itemSort = document.querySelector('.sort__item');
 let count = 0;
@@ -38,7 +38,7 @@ init();
 document.querySelector('.bar__btn-prev').addEventListener('click', function () {
   count--;
   if (count < 0) {
-    count = carouselItem.length - 1;
+    count = (carouselItem.length) - 1;
   }
 
   const screenWidth = window.innerWidth;

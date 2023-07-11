@@ -1,3 +1,6 @@
 document.addEventListener("partialsLoaded", () => {
-    import('./menu-carousel.js');
+    import('./food-menu-carousel.js');
+ });
+ document.addEventListener("partialsLoaded", () => {
+    import('./bar-menu-carousel.js');
  });

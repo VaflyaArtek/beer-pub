@@ -43,7 +43,7 @@
 .bar__carousel,
 .food__carousel {
     margin: 20px;
-    /* padding: 14px; */
+   
 }
 
 .carousel__slide-container span,
@@ -81,9 +81,10 @@
 
 .container__line {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     height: fit-content;
     width: 90%;
+    margin-right: 0;
 
 }
 
@@ -104,6 +105,7 @@
     color: var(--ui-text-color);
     margin-bottom: 1.6rem;
     width: 90%;
+    margin-right: 0;
 }
 
 .bar__price,
@@ -117,12 +119,98 @@
 .food__carousel {
     position: relative;
 }
+.bar__carousel,
+.food__carousel {
+    /* border: 2px solid var(--ui-brand-color); */
+    max-width: 100%;
+}
+
+.carousel__item,
+.menu-carousel__item {
+    display: flex;
+    transition: all ease 1s;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+
+}
+
+.carousel__slide-container,
+.menu__slide-container {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.sort__item {
+    margin-right: 10px;
+
+}
+
+.bar__carousel .bar__btn-prev,
+.bar__carousel .bar__btn-next {
+    position: absolute;
+    top: 725px;
+    width: 31px;
+    height: 51px;
+    background: none;
+}
+
+.bar__btn-next {
+    right: 10px;
+}
+
+
+.bar__btn-prev {
+    left: 10px;
+}
+.food__carousel .food__btn-prev,
+.food__carousel .food__btn-next {
+    position: absolute;
+    top: 225px;
+    width: 31px;
+    height: 51px;
+    background: none;
+}
+
+.food__btn-next {
+    right: 10px;
+}
+
+
+.food__btn-prev {
+    left: 10px;
+}
 
 @media (min-width: 500px) {
     .menu__food-image {
         padding-left: 40px;
         padding-right: 40px;
 
+    }
+    .bar__carousel, .food__carousel{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .carousel__item{
+        margin-right: 15px;
+        margin-left: 15px;
+        padding-left: 12px;
+       max-width: 98%;
+    }
+    .container__line{
+        margin: 0;
+    }
+    .carousel__slide-container, .menu__slide-container{
+        max-width: 95%;
+    }
+}
+@media (min-width:720px){
+    .carousel__item{
+        margin-left: 10px;
+        padding: 0;
+        max-width: 95%;
+        
     }
 }
 
@@ -133,16 +221,12 @@
 
     }
 
-    .bar__carousel {
+    .bar__carousel, .food__carousel {
         padding-left: 80px;
         padding-right: 80px;
 
     }
 
-    .food__carousel {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
 }
 
 @media (min-width: 1200px) {
@@ -150,32 +234,4 @@
         padding-left: 120px;
         padding-right: 120px;
     }
-}
-
-.bar__carousel,
-.food__carousel {
-    border: 2px solid var(--ui-brand-color);
-    max-width: 100%;
-}
-
-.carousel__item {
-    display: flex;
-    transition: all ease 1s;
-    flex-direction: column;
-    position: relative;
-    margin: 10px;
-  
-}
-
-.carousel__slide-container,
-.menu__slide-container {
-    display: flex;
-    overflow: hidden;
-    max-width: 100%;
-    /* border:2px solid var(--ui-brand-color); */
-
-}
-.sort__item{    
-    margin-right: 10px;
-    
 }
